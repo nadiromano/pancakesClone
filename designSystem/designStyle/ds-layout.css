@@ -1,0 +1,21 @@
+.design-sistem--container {
+  margin-left: 120px;
+}
+
+.desig-sistem--title {
+  font-family: sans-serif;
+  margin-left: 20px;
+  margin-top: 50px;
+  text-transform: uppercase;
+  color: rgb(118, 69, 217);
+  letter-spacing: 2px;
+}
+
+.desig-sistem--title::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 15%;
+  margin-top: 10px;
+  background-color: rgb(118, 69, 217);
+}
