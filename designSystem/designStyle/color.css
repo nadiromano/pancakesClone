@@ -1,0 +1,140 @@
+.color-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.cont {
+  margin-left: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 25px;
+}
+
+.primary-color-container {
+  width: 800px;
+}
+
+.grad-color-container {
+  width: 800px;
+}
+
+.color-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 25px;
+}
+
+.color {
+  width: 100px;
+  height: 50px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.color-title {
+  font-family: sans-serif;
+  font-size: 12px;
+  margin-left: 20px;
+  width: 150px;
+  text-transform: uppercase;
+}
+
+.color-description {
+  margin-top: 5px;
+  font-family: sans-serif;
+  font-size: 12px;
+  margin-left: 20px;
+  width: 150px;
+}
+
+.color-container-title {
+  font-family: sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  margin-left: 120px;
+}
+
+.primary-color {
+  background-color: rgb(118, 69, 217);
+}
+
+.secundary-color {
+  background-color: rgb(31, 199, 212);
+}
+
+.terciary-color {
+  background-color: rgb(237, 75, 158);
+}
+
+.accent-color {
+  background-color: rgb(255, 178, 55);
+}
+
+.success-color {
+  background-color: rgb(49, 208, 170);
+}
+
+.success-color--hover {
+  background-color: rgba(49, 208, 170, 0.65);
+}
+
+.bg-color--grad {
+  background: linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%);
+}
+
+.bg-color--grad-block {
+  background: linear-gradient(
+    139.73deg,
+    rgb(230, 253, 255) 0%,
+    rgb(243, 239, 255) 100%
+  );
+}
+
+.bg-color--grad-light {
+  background: linear-gradient(
+    111.68deg,
+    rgb(242, 236, 242) 0%,
+    rgb(232, 242, 246) 100%
+  );
+}
+
+.bg-color--grad-blue {
+  background: linear-gradient(rgb(111, 182, 241) 0%, rgb(234, 242, 246) 100%);
+}
+
+.bg-color--grad-violet {
+  background: linear-gradient(rgb(226, 201, 251) 0%, rgb(205, 184, 250) 100%);
+}
+
+.bg-color--grad-violet-dark {
+  background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
+}
+
+.bg-color--light {
+  background-color: rgb(250, 249, 250);
+}
+
+.bg-color--dark {
+  background-color: rgb(39, 38, 44);
+}
+
+.h2-color {
+  background-color: rgb(40, 13, 95);
+}
+
+.subtle-color {
+  background-color: rgb(122, 110, 170);
+}
+
+.formBg-color {
+  background-color: rgb(238, 234, 244);
+}
+
+.gray-color {
+  background-color: rgb(231, 227, 235);
+}
