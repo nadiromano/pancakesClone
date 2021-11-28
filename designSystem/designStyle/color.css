@@ -10,14 +10,7 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-bottom: 25px;
-}
-
-.primary-color-container {
-  width: 800px;
-}
-
-.grad-color-container {
-  width: 800px;
+  width: 50%;
 }
 
 .color-wrapper {
