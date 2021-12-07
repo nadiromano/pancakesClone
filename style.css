@@ -1,6 +1,7 @@
 @import url(designSystem/designStyle/color.css);
 @import url(designSystem/designStyle/forms.css);
 @import url(designSystem/designStyle/ds-layout.css);
+@import url(designSystem/designStyle/components.css);
 
 *,
 *::after,
