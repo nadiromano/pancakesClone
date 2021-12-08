@@ -1,5 +1,5 @@
 .design-sistem--container {
-  margin-left: 120px;
+  margin-left: 5%;
 }
 
 .desig-sistem--title {
@@ -27,4 +27,12 @@
   margin-top: 50px;
   margin-left: 20px;
   margin-bottom: 35px;
+}
+
+.layout__orizontal {
+  display: flex;
+}
+
+.layout__orizontal-block {
+  width: 100%;
 }

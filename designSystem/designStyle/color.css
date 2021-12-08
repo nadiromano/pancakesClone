@@ -8,8 +8,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-bottom: 25px;
-  width: 50%;
+  margin-bottom: 15px;
+  width: 100%;
 }
 
 .color-wrapper {
@@ -20,7 +20,7 @@
 }
 
 .color {
-  width: 100px;
+  width: 50px;
   height: 50px;
   margin: 20px;
   border-radius: 5px;
@@ -47,7 +47,7 @@
   font-size: 18px;
   text-transform: uppercase;
   margin-top: 50px;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .primary-color {
