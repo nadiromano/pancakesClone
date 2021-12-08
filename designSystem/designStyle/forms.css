@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* form */
+.input-form__container {
+  display: flex;
+  background-color: rgb(238, 234, 244);
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  margin-bottom: 50px;
+  border-radius: 16px;
+  width: 250px;
+  height: 60px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.input-form__wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  -webkit-box-align: center;
+  align-items: center;
+  color: rgb(40, 13, 95);
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding: 0.75rem 1rem 0px;
+}
+
+.input-form__input {
+  font-family: 'kanit';
+  color: rgb(40, 13, 95);
+  margin-bottom: 14px;
+  /* width: 0px; */
+  /* position: relative; */
+  font-weight: 400;
+  outline: none;
+  border: none;
+  flex: 1 1 auto;
+  background-color: transparent;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0px;
+  text-align: right;
+  margin-right: px;
+  appearance: textfield;
+}
+
+.input-form__input::placeholder {
+  color: rgb(150, 124, 170);
+}
+
+.input-search-sort__wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.input-sort__wrapper {
+}
+
+.input__text {
+  font-family: 'kanit';
+  color: rgb(40, 13, 95);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+.input-sort__box {
+  min-width: 150px;
+  height: 40px;
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+  padding: 0px 16px;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  border: 1px solid rgb(215, 202, 236);
+  /* border-radius: 16px; */
+  border-radius: 16px 16px 0 0;
+  background: rgb(238, 234, 244);
+  transition: border-radius 0.15s ease 0s;
+}
+
+.input-sort__first-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-sort__title {
+  font-family: 'kanit';
+  color: rgb(40, 13, 95);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.input-sort__icon {
+}
+
+.input-sort__cascade {
+  height: auto;
+  transform: scaleY(1);
+  opacity: 1;
+  border-width: 0px 1px 1px;
+  border-style: solid;
+  background: rgb(238, 234, 244);
+  border-color: rgb(215, 202, 236);
+  border-image: initial;
+  border-radius: 0px 0px 16px 16px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 0px 2px,
+    rgb(14 14 44 / 10%) 0px 4px 12px -8px;
+}
+
+.input-sort__cascade__content {
+  list-style: none;
+  padding: 10px 16px;
+}
+
+.input-sort__cascade__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.input-search__wrapper {
+}
+
+.input-search__box {
+}
+
+.input-search__field {
+}
+
+.input-search__input {
+  font-family: 'kanit';
+  background-color: rgb(238, 234, 244);
+  border-radius: 16px;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  color: rgb(40, 13, 95);
+  display: block;
+  font-size: 16px;
+  height: 40px;
+  outline: 0px;
+  padding: 0px 16px;
+  width: 100%;
+  border: 1px solid rgb(215, 202, 236);
+}
+
+.input-search__input::placeholder {
+  color: rgb(125, 144, 172);
+}
+
+.input-search__input:focus {
+  box-shadow: rgb(118 69 217) 0px 0px 0px 1px,
+    rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+}
+
+/* selector */
+
+.input-selector__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.input-selector__check__container {
+  display: flex;
+  gap: 15px;
+}
+
+.input-selector__radio {
+  appearance: none;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+  transition: background-color 0.2s ease-in-out 0s;
+  border: 0px;
+  border-radius: 50%;
+  background-color: rgb(238, 234, 244);
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  margin: 0px;
+}
+
+.input-selector__radio:hover:not(:checked) {
+  box-shadow: rgb(118 69 217) 0px 0px 0px 1px,
+    rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+}
+
+.input-selector__radio:hover {
+  box-shadow: rgb(118 69 217) 0px 0px 0px 1px,
+    rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+}
+
+.input-selector__radio:checked {
+  background-color: rgb(49, 208, 170);
+}
+
+.input-selector__radio:checked:after {
+  content: '';
+  display: block;
+  height: 12px;
+  width: 12px;
+  background-color: white;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 12px;
+  border-radius: 50%;
+}
+
+.input-selector__label {
+  font-family: 'kanit';
+  color: rgb(40, 13, 95);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-left: 8px;
+}
+
+/* switch */
+.input-switch__container {
+  align-items: center;
+  background-color: rgb(189, 194, 196);
+  border-radius: 24px;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  cursor: pointer;
+  display: inline-flex;
+  height: 35px;
+  position: relative;
+  transition: background-color 200ms ease 0s;
+  width: 60px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.input-switch__box {
+  display: flex;
+}
+
+.input-switch__checkbox {
+  cursor: pointer;
+  opacity: 0;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+
+.input-switch__states {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  margin-top: 2px;
+}
+
+.input-switch__item--off {
+  fill: white;
+}
+
+.input-switch__item--on {
+  fill: white;
+}
+
+.input-switch__selected {
+  width: 28px;
+  height: 28px;
+  background-color: white;
+  border-radius: 100px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  /* right: 3px; */
+  z-index: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-switch__selected:hover {
+  box-shadow: rgb(118 69 217) 0px 0px 0px 1px,
+    rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+}
+
+.input-switch__item--selected {
+  margin-top: 2px;
+  fill: yellow;
+}
+
+/*input number*/
+.input__rounded {
+  display: flex;
+  gap: 20px;
+}
+
+.input-number__container--small {
+  width: 52px;
+  display: flex;
+}
+
+.input-number__container--large {
+  width: 76px;
+  display: flex;
+}
+.input-number__input {
+  background-color: rgb(238, 234, 244);
+  border-radius: 16px;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  color: rgb(40, 13, 95);
+  display: block;
+  font-size: 16px;
+  height: 32px;
+  outline: 0px;
+  padding: 0px 16px;
+  width: 100%;
+  border: 1px solid rgb(215, 202, 236);
+}
+
+.input-number__input::placeholder {
+  font-family: 'Kanit';
+  font-weight: 400;
+  color: rgb(40, 13, 95);
+}
+
+/*input on off toggle*/
+
+.input__on-of {
+  align-items: center;
+  background-color: rgb(238, 234, 244);
+  border-radius: 24px;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  cursor: pointer;
+  display: inline-flex;
+  height: 32px;
+  position: relative;
+  transition: background-color 200ms ease 0s;
+  width: 56px;
+}
+
+.input__on-of-box {
+  cursor: pointer;
+  opacity: 0;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+
+.input__on-of-toggle {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 26px;
+  left: 3px;
+  position: absolute;
+  top: 3px;
+  transition: left 200ms ease-in 0s;
+  width: 26px;
+  z-index: 500;
+}
+
+.input__on-of-toggle:hover {
+  box-shadow: rgb(118 69 217) 0px 0px 0px 1px,
+    rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+}
+
+.input__toggle-icon__box {
+  position: relative;
+  display: inline-block;
+}
+
+.input__toggle-icon__input-input {
+  height: 40px;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  width: 40px;
+}
+
+.input__toggle-icon__input-input__label__label {
+  width: 56px;
+  height: 32px;
+  background: rgb(49, 208, 170);
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  display: inline-block;
+  border-radius: 50px;
+  position: relative;
+  transition: all 0.3s ease 0s;
+  transform-origin: 20% center;
+  cursor: pointer;
+}
+
+.input__toggle-icon__input-input:checked + label .pancakes {
+  transform: translateX(24px);
+}
+
+.input__toggle-icon__box .pancakes {
+  position: absolute;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+}
+
+.input__toggle-icon__box .pancake {
+  background: rgb(226, 124, 49);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  transition: all 0.4s ease 0s;
+  top: 2px;
+  left: 4px;
+  box-shadow: rgb(251 190 124) 0px 1.5px 0px 1.5px;
+}
+
+.input__toggle-icon__input-input:checked + label .pancake:nth-child(1) {
+  background: rgb(226, 124, 49);
+  box-shadow: rgb(251 190 124) 0px 1.5px 0px 1.5px;
+  transition-delay: 0.2s;
+}
+
+.input__toggle-icon__box .pancake:nth-child(1) {
+  background: rgb(255, 255, 255);
+  box-shadow: rgb(189 194 196) 0px 1.5px 0px 1.5px;
+}
+
+.input__toggle-icon__input-input:checked + label .pancake:nth-child(2) {
+  transform: scale(1);
+  transition-delay: 0.2s;
+}
+
+.input__toggle-icon__box .pancake:nth-child(2) {
+  left: 0px;
+  top: -1px;
+  transform: scale(0);
+  transition: all 0.2s ease 0.2s;
+}
+
+.input__toggle-icon__input-input:checked + label .pancake:nth-child(3) {
+  transform: scale(1);
+  transition-delay: 0.4s;
+}
+
+.input__toggle-icon__box .pancake:nth-child(3) {
+  top: -6px;
+  transform: scale(0);
+  transition: all 0.2s ease 0.2s;
+}
+
+.input__toggle-icon__box .pancake:nth-child(3)::before {
+  top: 15px;
+  left: 3.75px;
+}
+
+.input__toggle-icon__box .pancake:nth-child(3)::before,
+.input__toggle-icon__box .pancake:nth-child(3)::after {
+  content: '';
+  position: absolute;
+  background: rgb(239, 137, 39);
+  border-radius: 20px;
+  width: 50%;
+  height: 20%;
+}
+
+.input__toggle-icon__box .pancake:nth-child(3)::after {
+  top: 16px;
+  right: 3.75px;
+}
+
+.input__toggle-icon__box .pancake:nth-child(3)::after {
+  content: '';
+  position: absolute;
+  background: rgb(239, 137, 39);
+  border-radius: 20px;
+  width: 50%;
+  height: 20%;
+}
+
+.input__toggle-icon__input-input:checked + label .butter {
+  transform: scale(1);
+  transition-delay: 0.6s;
+}
+
+.input__toggle-icon__box .butter {
+  width: 10px;
+  height: 8px;
+  background: rgb(251, 219, 96);
+  top: 5px;
+  left: 13px;
+  position: absolute;
+  border-radius: 3px;
+  box-shadow: rgb(214 120 35) 0px 0.75px 0px 0.75px;
+  transform: scale(0);
+  transition: all 0.2s ease 0s;
+}
