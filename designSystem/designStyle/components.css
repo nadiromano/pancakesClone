@@ -1,118 +1,119 @@
 @font-face {
-    font-family: 'Kanit';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/kanit/v7/nKKZ-Go6G5tXcraBGwCYdA.woff2) format('woff2');
-    unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kanit/v7/nKKZ-Go6G5tXcraBGwCYdA.woff2)
+    format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    font-size: 100%;
-    vertical-align: baseline;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
 * {
-    font-family: Kanit, sans-serif;
+  font-family: Kanit, sans-serif;
 }
 
 .components-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .color-container-title {
-    font-family: sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    margin-top: 50px;
-    margin-left: 20px;
+  font-family: sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-left: 20px;
 }
 
 .components-space {
-    margin: 40px 40px 40px 0px;
+  margin: 40px 40px 40px 0px;
 }
 
-    /* start components-card */
+/* start components-card */
 .components-carad-container {
-    height: fit-content;
-    padding: 1px 1px 4px;
-    box-sizing: border-box;
+  height: fit-content;
+  padding: 1px 1px 4px;
+  box-sizing: border-box;
 
-    background: rgb(231, 227, 235);
-    border-radius: 24px;
-    color: rgb(40, 13, 95);
-    overflow: hidden;
-    position: relative;
+  background: rgb(231, 227, 235);
+  border-radius: 24px;
+  color: rgb(40, 13, 95);
+  overflow: hidden;
+  position: relative;
 
-    /* mymod */
-    width: 282px;
+  /* mymod */
+  width: 282px;
 }
 
 .components-card {
-    /* width: 100%;
+  /* width: 100%;
     height: 100%; */
-    /* mymod */
-    width: 280px;
-    height: 280px;
-    overflow: inherit;
-    background: rgb(255, 255, 255);
-    border-radius: 24px;
+  /* mymod */
+  width: 280px;
+  height: 280px;
+  overflow: inherit;
+  background: rgb(255, 255, 255);
+  border-radius: 24px;
 }
 
 .components-card-padding {
-    padding: 24px;
+  padding: 24px;
 }
 
 .components-position-svg {
-    position: absolute;
-    top: 24px;
-    right: 24px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
 }
 
 .components-card-svg {
-    align-self: center;
-    fill: rgb(118, 69, 217);
-    flex-shrink: 0;
-    width: 36px;
+  align-self: center;
+  fill: rgb(118, 69, 217);
+  flex-shrink: 0;
+  width: 36px;
 }
 
 .components-card-content {
-    display: flex;
-    flex-direction: column;
-    -webkit-box-pack: end;
-    justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
 
-    margin-top: 64px;
+  margin-top: 64px;
 
-    min-height: 168px;
+  min-height: 168px;
 
-    min-width: 232px;
-    width: fit-content;
+  min-width: 232px;
+  width: fit-content;
 }
 
 .components-card-title {
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 1.1;
-    color: rgb(40, 13, 95);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: rgb(40, 13, 95);
 }
 
 .components-user-title {
-    font-size: 40px;
-    margin-bottom: 24px;
-    color: rgb(118, 69, 217);
+  font-size: 40px;
+  margin-bottom: 24px;
+  color: rgb(118, 69, 217);
 }
 
 .components-text {
-    color: rgb(122, 110, 170);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
+  color: rgb(122, 110, 170);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 /* end-components-card */
@@ -120,198 +121,201 @@
 /* start win-container */
 
 .components-win-container {
-    margin: 0px;
-    width: 100%;
-    max-width: 968px;
+  margin: 0px;
+  width: 100%;
+  max-width: 968px;
 
-    padding-top: 48px;
-    padding-bottom: 48px;
-    min-height: auto;
-    padding-left: 24px;
-    padding-right: 24px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  min-height: auto;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .components-win-container-style {
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.6);
-    border: 1px solid rgb(231, 227, 235);
-    box-sizing: border-box;
-    backdrop-filter: blur(12px);
-    border-radius: 72px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgb(231, 227, 235);
+  box-sizing: border-box;
+  backdrop-filter: blur(12px);
+  border-radius: 72px;
 }
 
 .components-win-layout {
-    display: flex;
-    flex-direction: column;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
 }
 
 .components-win-title {
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 1.1;
-    color: rgb(40, 13, 95);
-    margin-bottom: 24px;
-    text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: rgb(40, 13, 95);
+  margin-bottom: 24px;
+  text-align: center;
 }
 
 .components-text-second {
-    color: rgb(122, 110, 170);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-bottom: 40px;
+  color: rgb(122, 110, 170);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 40px;
 }
 
 /* cards */
 
 .components-cards-layout {
-    display: flex;
-    flex-direction: row;
-    max-width: 600px;
-    margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  max-width: 600px;
+  margin: 0px auto;
 }
 
 /* start prediction-card */
 
 .components-prediction-card-layout {
-    display: flex;
-    flex: 1 1 0%;
-    margin-right: 24px;
-    margin-bottom: 0px;
-    max-width: 100%;
+  display: flex;
+  flex: 1 1 0%;
+  margin-right: 24px;
+  margin-bottom: 0px;
+  max-width: 100%;
 }
 
 .components-prediction-rotate {
-    transform: rotate(-2.36deg);
-    height: fit-content;
-    padding: 1px 1px 4px;
-    box-sizing: border-box;
-    background: rgb(255, 178, 55);
-    border-radius: 24px;
-    color: rgb(40, 13, 95);
-    overflow: hidden;
-    position: relative;
+  transform: rotate(-2.36deg);
+  height: fit-content;
+  padding: 1px 1px 4px;
+  box-sizing: border-box;
+  background: rgb(255, 178, 55);
+  border-radius: 24px;
+  color: rgb(40, 13, 95);
+  overflow: hidden;
+  position: relative;
 }
 
 .components-prediction-color {
-    width: 100%;
-    height: 100%;
-    overflow: initial;
-    background: linear-gradient(rgb(255, 178, 55) 0%, rgb(255, 205, 81) 51.17%, rgb(255, 231, 106) 100%);
-    border-radius: 24px;
+  width: 100%;
+  height: 100%;
+  overflow: initial;
+  background: linear-gradient(
+    rgb(255, 178, 55) 0%,
+    rgb(255, 205, 81) 51.17%,
+    rgb(255, 231, 106) 100%
+  );
+  border-radius: 24px;
 }
 
 .components-prediction-padding {
-    padding: 24px;
+  padding: 24px;
 }
 
 .components-prediction-svg-pos {
-    transform: rotate(-2.36deg);
-    position: absolute;
-    top: 24px;
-    right: 24px;
+  transform: rotate(-2.36deg);
+  position: absolute;
+  top: 24px;
+  right: 24px;
 }
 
 .components-pred-svg-layout {
-    align-self: center;
-    flex-shrink: 0;
-    width: 36px;
+  align-self: center;
+  flex-shrink: 0;
+  width: 36px;
 }
 
 .components-win-cards-content-layout {
-    display: flex;
-    flex-direction: column;
-    margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
 }
 
 .components-pred-text-style {
-    color: rgb(40, 13, 95);
-    font-weight: 600;
-    line-height: 1.5;
-    font-size: 16px;
+  color: rgb(40, 13, 95);
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 16px;
 }
 
 .components-pred-title {
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 1.1;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.1;
 
-    margin-top: 8px;
-    margin-bottom: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .components-pred-in-bnb {
-    color: rgb(40, 13, 95);
-    font-weight: 600;
-    line-height: 1.5;
-    margin-bottom: 24px;
-    font-size: 16px;
+  color: rgb(40, 13, 95);
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  font-size: 16px;
 }
 
 .components-pred-will-bnb {
-    color: rgb(40, 13, 95);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-bottom: 40px;
+  color: rgb(40, 13, 95);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 40px;
 }
 
 .components-perd-btn-layout {
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
 }
 
 .components-pred-a {
-    width: 100%;
-    color: inherit;
-    text-decoration: none;
+  width: 100%;
+  color: inherit;
+  text-decoration: none;
 }
 
 .components-pred-btn-layout {
-    -webkit-box-align: center;
-    align-items: center;
-    border: 0px;
-    border-radius: 16px;
-    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-    cursor: pointer;
-    display: inline-flex;
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 600;
-    -webkit-box-pack: center;
-    justify-content: center;
-    letter-spacing: 0.03em;
-    line-height: 1;
-    opacity: 1;
-    outline: 0px;
-    transition: background-color 0.2s ease 0s,
-    opacity 0.2s ease 0s;
-    height: 48px;
-    padding: 0px 24px;
-    background-color: rgb(31, 199, 212);
-    color: white;
-    width: 100%;
+  -webkit-box-align: center;
+  align-items: center;
+  border: 0px;
+  border-radius: 16px;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-box-pack: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 48px;
+  padding: 0px 24px;
+  background-color: rgb(31, 199, 212);
+  color: white;
+  width: 100%;
 }
 
 .components-pred-btn-text-col {
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.5;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 .components-pred-btn-svg-col {
-    align-self: center;
-    fill: rgb(255, 255, 255);
-    flex-shrink: 0;
-    margin-left: 4px;
+  align-self: center;
+  fill: rgb(255, 255, 255);
+  flex-shrink: 0;
+  margin-left: 4px;
 }
 
 /* end prediction-card */
@@ -319,136 +323,135 @@
 /* start lottery-card */
 
 .components-lottery-card-layout {
-    display: flex;
-    flex: 1 1 0%;
-    max-width: 100%;
+  display: flex;
+  flex: 1 1 0%;
+  max-width: 100%;
 }
 
 .components-lottery-card-rotate {
-    transform: rotate(1.43deg);
-    height: fit-content;
-    padding: 1px 1px 4px;
-    box-sizing: border-box;
-    background: rgb(60, 23, 134);
-    border-radius: 24px;
-    color: rgb(40, 13, 95);
-    overflow: hidden;
-    position: relative;
+  transform: rotate(1.43deg);
+  height: fit-content;
+  padding: 1px 1px 4px;
+  box-sizing: border-box;
+  background: rgb(60, 23, 134);
+  border-radius: 24px;
+  color: rgb(40, 13, 95);
+  overflow: hidden;
+  position: relative;
 }
 
 .components-lottery-card-color {
-    width: 100%;
-    height: 100%;
-    overflow: initial;
-    background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
-    border-radius: 24px;
+  width: 100%;
+  height: 100%;
+  overflow: initial;
+  background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
+  border-radius: 24px;
 }
 
 .components-lottery-card-pad {
-    padding: 24px;
+  padding: 24px;
 }
 
 .componetns-lottery-svg-pos {
-    transform: rotate(1.43deg);
-    position: absolute;
-    top: 24px;
-    right: 24px;
+  transform: rotate(1.43deg);
+  position: absolute;
+  top: 24px;
+  right: 24px;
 }
 
 .components-lott-svg-layout {
-    align-self: center;
-    fill: white;
-    flex-shrink: 0;
+  align-self: center;
+  fill: white;
+  flex-shrink: 0;
 }
 
 .components-lott-text-style {
-    color: white;
-    font-weight: 600;
-    line-height: 1.5;
-    font-size: 16px;
+  color: white;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 16px;
 }
 
 .components-cONvdr {
-    color: rgb(40, 13, 95);
-    font-weight: 600;
-    line-height: 1.5;
-    font-size: 40px;
+  color: rgb(40, 13, 95);
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 40px;
 }
 
 .components-dcNETz {
-    /* -webkit-text-fill-color: transparent; */
-    /* background: linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%) text; */
+  /* -webkit-text-fill-color: transparent; */
+  /* background: linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%) text; */
 }
 
 .components-lott-in-cake {
-    color: white;
-    font-weight: 600;
-    line-height: 1.5;
-    margin-bottom: 24px;
-    font-size: 16px;
+  color: white;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  font-size: 16px;
 }
 
 .components-lott-buy-tickets {
-    color: white;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-bottom: 40px;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 40px;
 }
 
 .components-lott-btn-layout {
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
 }
 
 .components-lott-a {
-    width: 100%;
-    color: inherit;
-    text-decoration: none;
+  width: 100%;
+  color: inherit;
+  text-decoration: none;
 }
 
 .components-lott-btn-layout {
-    -webkit-box-align: center;
-    align-items: center;
-    border: 0px;
-    border-radius: 16px;
-    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-    cursor: pointer;
-    display: inline-flex;
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 600;
-    -webkit-box-pack: center;
-    justify-content: center;
-    letter-spacing: 0.03em;
-    line-height: 1;
-    opacity: 1;
-    outline: 0px;
-    transition: background-color 0.2s ease 0s,
-    opacity 0.2s ease 0s;
-    height: 48px;
-    /* padding: 0px 24px; */
-    background-color: rgb(31, 199, 212);
-    color: white;
-    width: 100%;
+  -webkit-box-align: center;
+  align-items: center;
+  border: 0px;
+  border-radius: 16px;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-box-pack: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 48px;
+  /* padding: 0px 24px; */
+  background-color: rgb(31, 199, 212);
+  color: white;
+  width: 100%;
 }
 
 .components-lott-btn-text-col {
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.5;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 .components-lott-btn-svg-col {
-    align-self: center;
-    fill: rgb(255, 255, 255);
-    flex-shrink: 0;
-    margin-left: 4px;
-    width: 20px;
+  align-self: center;
+  fill: rgb(255, 255, 255);
+  flex-shrink: 0;
+  margin-left: 4px;
+  width: 20px;
 }
 
 /* end lottery-card / end win container */
@@ -456,165 +459,440 @@
 /* start-connect-wallet */
 
 .components-con-wallet-contain {
-    width: auto;
-    min-width: 320px;
-    max-width: 100%;
+  width: auto;
+  min-width: 320px;
+  max-width: 100%;
 
-    overflow: hidden;
-    background: rgb(255, 255, 255);
-    box-shadow: rgb(14 14 44 / 10%) 0px 20px 36px -8px,
+  overflow: hidden;
+  background: rgb(255, 255, 255);
+  box-shadow: rgb(14 14 44 / 10%) 0px 20px 36px -8px,
     rgb(0 0 0 / 5%) 0px 1px 1px;
-    border: 1px solid rgb(231, 227, 235);
-    border-radius: 32px;
-    max-height: 100vh;
-    z-index: 100;
+  border: 1px solid rgb(231, 227, 235);
+  border-radius: 32px;
+  max-height: 100vh;
+  z-index: 100;
 }
 
 .componetns-con-wall-title-head {
-    -webkit-box-align: center;
-    align-items: center;
-    background: linear-gradient(139.73deg, rgb(229, 253, 255) 0%, rgb(243, 239, 255) 100%);
-    border-bottom: 1px solid rgb(231, 227, 235);
-    display: flex;
-    padding: 12px 24px;
+  -webkit-box-align: center;
+  align-items: center;
+  background: linear-gradient(
+    139.73deg,
+    rgb(229, 253, 255) 0%,
+    rgb(243, 239, 255) 100%
+  );
+  border-bottom: 1px solid rgb(231, 227, 235);
+  display: flex;
+  padding: 12px 24px;
 }
 
 .componetns-con-wall-title-layout {
-    display: flex;
-   -webkit-box-align: center;
-   align-items: center;
-   flex: 1 1 0%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  flex: 1 1 0%;
 }
 
 .components-con-wall-title-style {
-   font-size: 20px;
-   font-weight: 600;
-   line-height: 1.1;
-   color: rgb(40, 13, 95);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: rgb(40, 13, 95);
 }
 
 .components-con-wall-btn {
-    padding: 0px;
-    width: 48px;
+  padding: 0px;
+  width: 48px;
 
-    -webkit-box-align: center;
-    align-items: center;
-    border: 0px;
-    border-radius: 16px;
-    cursor: pointer;
-    display: inline-flex;
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 600;
-    -webkit-box-pack: center;
-    justify-content: center;
-    letter-spacing: 0.03em;
-    line-height: 1;
-    opacity: 1;
-    outline: 0px;
-    transition: background-color 0.2s ease 0s,
-    opacity 0.2s ease 0s;
-    height: 48px;
-    padding: 0px 24px;
-    background-color: transparent;
-    color: rgb(31, 199, 212);
-    box-shadow: none;
+  -webkit-box-align: center;
+  align-items: center;
+  border: 0px;
+  border-radius: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-box-pack: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 48px;
+  padding: 0px 24px;
+  background-color: transparent;
+  color: rgb(31, 199, 212);
+  box-shadow: none;
 }
 
 .components-con-wall-svg {
-    align-self: center;
-    fill: rgb(31, 199, 212);
-    flex-shrink: 0;
+  align-self: center;
+  fill: rgb(31, 199, 212);
+  flex-shrink: 0;
 }
 
 .components-con-wall-content {
-    display: flex;
-    flex-direction: column;
-    max-height: 90vh;
-    overflow-y: auto;
-    width: 340px;
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+  overflow-y: auto;
+  width: 340px;
 }
 
 .components-con-wall-center {
-    border-bottom: 1px solid rgb(231, 227, 235);
-    max-height: 453px;
-    overflow-y: auto;
-    padding-top: 24px;
-    padding-bottom: 24px;
+  border-bottom: 1px solid rgb(231, 227, 235);
+  max-height: 453px;
+  overflow-y: auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .components-con-wall-center-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .components-con-wall-btn-fox {
-    -webkit-box-align: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    -webkit-box-pack: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 
-    border: 0px;
-    border-radius: 16px;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0.03em;
-    line-height: 1;
-    opacity: 1;
-    outline: 0px;
-    transition: background-color 0.2s ease 0s,
-    opacity 0.2s ease 0s;
-    padding: 16px 24px;
-    background-color: transparent;
-    color: rgb(31, 199, 212);
-    box-shadow: none;
-    width: 100%;
+  border: 0px;
+  border-radius: 16px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  padding: 16px 24px;
+  background-color: transparent;
+  color: rgb(31, 199, 212);
+  box-shadow: none;
+  width: 100%;
 }
 
 .components-con-wall-svg-fox {
-    align-self: center;
-    fill: rgb(40, 13, 95);
-    flex-shrink: 0;
-    margin-bottom: 8px;
+  align-self: center;
+  fill: rgb(40, 13, 95);
+  flex-shrink: 0;
+  margin-bottom: 8px;
 }
 
 .components-con-wall-metamask {
-    color: rgb(40, 13, 95);
-    font-weight: 400;
-    line-height: 1.5;
-    font-size: 14px;
+  color: rgb(40, 13, 95);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 14px;
 }
 
 .components-con-wall-btn-wallet-connect {
-    border: 0px;
-    border-radius: 16px;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0.03em;
-    line-height: 1;
-    opacity: 1;
-    outline: 0px;
-    transition: background-color 0.2s ease 0s,
-    opacity 0.2s ease 0s;
-    padding: 16px 24px;
-    background-color: transparent;
-    color: rgb(31, 199, 212);
-    box-shadow: none;
-    width: 100%;
+  border: 0px;
+  border-radius: 16px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  padding: 16px 24px;
+  background-color: transparent;
+  color: rgb(31, 199, 212);
+  box-shadow: none;
+  width: 100%;
 }
 
 .components-con-wall-svg-wallet-connect {
-    align-self: center;
-    fill: rgb(40, 13, 95);
-    flex-shrink: 0;
-    margin-bottom: 8px;
+  align-self: center;
+  fill: rgb(40, 13, 95);
+  flex-shrink: 0;
+  margin-bottom: 8px;
+}
+
+/*EARN*/
+.bbxfiH {
+  filter: drop-shadow(rgba(25, 19, 38, 0.15) 0px 1px 4px);
+  width: 80%;
+  background: rgb(255, 255, 255);
+  border-radius: 16px;
+  margin: 16px 0px;
+}
+
+.gxAqPO {
+  position: relative;
+}
+.bmFkzh {
+  overflow: visible;
+  scroll-margin-top: 64px;
+}
+
+.bPHARW {
+  border-collapse: collapse;
+  font-size: 14px;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.gKuWnj {
+  cursor: pointer;
+  border-bottom: 2px solid rgb(231, 227, 235);
+}
+
+.kIrTuc tr td {
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.fXoGxO {
+  padding: 24px 8px 24px 0px;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.bMCyww {
+  min-height: 24px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.dhxziD {
+  padding-left: 16px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.hCZtwf {
+  padding-right: 8px;
+  width: 24px;
+}
+
+.gOSriX {
+  max-height: 40px;
+  max-width: 40px;
+  position: relative;
+  width: 100%;
+}
+
+.kMWxZt {
+  position: absolute;
+  width: 82%;
+  inset: auto 0px 0px auto;
+  z-index: 6;
+}
+
+.kyvWZW::before {
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  content: '';
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 7;
+}
+
+.bwSYJA {
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.gOSriX::after {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.gqJFzZ {
+  position: absolute;
+  width: 50%;
+  inset: 0px auto auto 0px;
+  z-index: 5;
+}
+
+.FFdTn {
+  max-height: 20px;
+  max-width: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.FFdTn::after {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.gOSriX::after {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.jDnmwq {
+  color: rgb(40, 13, 95);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.eHXacb {
+  font-size: 12px;
+  color: rgb(122, 110, 170);
+  text-align: left;
+}
+
+.kqIeUT {
+  color: rgb(189, 194, 196);
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.kjKvIO {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  color: rgb(40, 13, 95);
+}
+
+.bDyGyM {
+  cursor: pointer;
+}
+
+.togOu {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.kjKvIO button {
+  width: 20px;
+  height: 20px;
+}
+
+.fAYovO {
+  padding: 0px;
+  width: 32px;
+}
+
+.hmVgeU {
+  -webkit-box-align: center;
+  align-items: center;
+  border: 0px;
+  border-radius: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-box-pack: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 32px;
+  padding: 0px 16px;
+  background-color: transparent;
+  color: rgb(31, 199, 212);
+  box-shadow: none;
+  margin-left: 4px;
+}
+
+.iSutCo {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.dYikBt {
+  min-width: 110px;
+  font-weight: 600;
+  text-align: right;
+  margin-right: 14px;
+}
+
+.MlLjM {
+  color: rgb(40, 13, 95);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.hwyIfC {
+  display: inline-block;
+}
+
+.cSawQi {
+  align-self: center;
+  fill: rgb(122, 110, 170);
+  flex-shrink: 0;
+}
+
+.chcvRc {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.gRGWxA {
+  color: rgb(40, 13, 95);
+  width: 36px;
+  text-align: right;
+  margin-right: 14px;
+}
+
+.uZaHK {
+  display: inline-block;
+}
+
+.bGa-dHE {
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  padding-right: 8px;
+  color: rgb(31, 199, 212);
+}
+
+.bRKkCH {
+  transform: rotate(0deg);
+  height: 20px;
+}
+
+.ACFFk {
+  align-self: center;
+  fill: rgb(31, 199, 212);
+  flex-shrink: 0;
 }
