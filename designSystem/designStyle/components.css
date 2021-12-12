@@ -689,12 +689,12 @@ tbody {
 
 .earn__table-table-row__cont-el__title-icon-box {
   padding-right: 8px;
-  width: 24px;
+  width: 35px;
 }
 
 .earn__table-table-row__cont-el__title-icon-container {
-  max-height: 40px;
-  max-width: 40px;
+  max-height: 35px;
+  max-width: 35px;
   position: relative;
   width: 100%;
 }
@@ -702,7 +702,7 @@ tbody {
 .earn__table-table-row__cont-el__title-icon-main {
   position: absolute;
   width: 82%;
-  inset: auto 0px 0px auto;
+  inset: auto 0px 5px auto;
   z-index: 6;
 }
 
@@ -734,7 +734,7 @@ tbody {
 
 .earn__table-table-row__cont-el__title-icon-secundary-item {
   position: absolute;
-  width: 50%;
+  width: 30%;
   inset: 0px auto auto 0px;
   z-index: 5;
 }
@@ -895,4 +895,138 @@ tbody {
   align-self: center;
   fill: rgb(31, 199, 212);
   flex-shrink: 0;
+}
+
+/*NFTS*/
+
+/*Card vertical*/
+
+.ntfs__cards__wrapper {
+  border-radius: 8px;
+  max-width: 320px;
+  transition: opacity 200ms ease 0s;
+}
+
+.ntfs__cards__wrapper > div {
+  /* border-radius: 8px; */
+}
+
+.ntfs__cards__card {
+  width: 100%;
+  height: 100%;
+  overflow: inherit;
+  background: rgb(255, 255, 255);
+  border-radius: 24px;
+}
+
+.ntfs__cards__card--spacer {
+  padding: 8px;
+}
+
+.ntfs__cards__card-img__wrapper {
+  height: max-content;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.ntfs__cards__card-img {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.ntfs__cards__card-img__container {
+  max-height: 320px;
+  max-width: 320px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.ntfs__cards__card-img__container::after {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.ntfs__cards__card-cont__text {
+  color: rgb(122, 110, 170);
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+.ntfs__cards__card-cont__subtext {
+  color: rgb(40, 13, 95);
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.ntfs__cards__card-cont-price__container {
+  border-top: 1px solid rgb(231, 227, 235);
+  padding-top: 8px;
+}
+
+.ntfs__cards__card-cont__wrapper {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.ntfs__cards__card-cont-price__text {
+  color: rgb(122, 110, 170);
+  font-weight: 400;
+  line-height: 1.5;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  max-width: 120px;
+}
+
+.ntfs__cards__card-cont-price__coin-container {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.ntfs__cards__card-cont-price__coin-text {
+  color: rgb(122, 110, 170);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 12px;
+}
+
+.ntfs__cards__card-cont-price__coin-icon {
+  align-self: center;
+  fill: rgb(40, 13, 95);
+  flex-shrink: 0;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.ntfs__cards__card-cont-price__coin-icon-text {
+  color: rgb(40, 13, 95);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.ntfs__cards__container {
+  background: rgb(231, 227, 235);
+  border-radius: 25px;
+  color: rgb(40, 13, 95);
+  overflow: hidden;
+  position: relative;
+  padding: 1px 1px 3px;
+  margin-bottom: 25px; /*da togliere*/
 }
