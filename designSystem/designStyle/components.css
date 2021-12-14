@@ -37,7 +37,16 @@
     margin: 40px 40px 40px 0px;
 }
 
-    /* start components-card */
+.components-design-flex {
+    display: flex;
+}
+
+.components-ti-tex-lay {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Start Components Cards */
 .components-carad-container {
     height: fit-content;
     padding: 1px 1px 4px;
@@ -49,19 +58,19 @@
     overflow: hidden;
     position: relative;
 
-    /* mymod */
+    /* Modifica Design System */
     width: 282px;
 }
 
 .components-card {
     /* width: 100%;
     height: 100%; */
-    /* mymod */
-    width: 280px;
-    height: 280px;
     overflow: inherit;
     background: rgb(255, 255, 255);
     border-radius: 24px;
+    /* Modifica Design System */
+    width: 280px;
+    height: 280px;
 }
 
 .components-card-padding {
@@ -86,11 +95,8 @@
     flex-direction: column;
     -webkit-box-pack: end;
     justify-content: flex-end;
-
     margin-top: 64px;
-
     min-height: 168px;
-
     min-width: 232px;
     width: fit-content;
 }
@@ -115,20 +121,22 @@
     line-height: 1.5;
 }
 
-/* end-components-card */
+/* End Components Card */
 
-/* start win-container */
+/* Start Win Container */
 
 .components-win-container {
     margin: 0px;
     width: 100%;
     max-width: 968px;
-
     padding-top: 48px;
     padding-bottom: 48px;
     min-height: auto;
     padding-left: 24px;
     padding-right: 24px;
+    /* Modifica Design System */
+    padding-top: 40px;
+
 }
 
 .components-win-container-style {
@@ -166,7 +174,7 @@
     margin-bottom: 40px;
 }
 
-/* cards */
+/* Cards */
 
 .components-cards-layout {
     display: flex;
@@ -175,7 +183,7 @@
     margin: 0px auto;
 }
 
-/* start prediction-card */
+/* Start Prediction Card */
 
 .components-prediction-card-layout {
     display: flex;
@@ -239,7 +247,6 @@
     font-size: 40px;
     font-weight: 600;
     line-height: 1.1;
-
     margin-top: 8px;
     margin-bottom: 8px;
 }
@@ -292,7 +299,7 @@
     opacity: 1;
     outline: 0px;
     transition: background-color 0.2s ease 0s,
-    opacity 0.2s ease 0s;
+        opacity 0.2s ease 0s;
     height: 48px;
     padding: 0px 24px;
     background-color: rgb(31, 199, 212);
@@ -312,11 +319,12 @@
     fill: rgb(255, 255, 255);
     flex-shrink: 0;
     margin-left: 4px;
+    width: 20px;
 }
 
-/* end prediction-card */
+/* End Prediction Card */
 
-/* start lottery-card */
+/* Start Lottery Card */
 
 .components-lottery-card-layout {
     display: flex;
@@ -359,6 +367,7 @@
     align-self: center;
     fill: white;
     flex-shrink: 0;
+    width: 36px;
 }
 
 .components-lott-text-style {
@@ -428,7 +437,7 @@
     opacity: 1;
     outline: 0px;
     transition: background-color 0.2s ease 0s,
-    opacity 0.2s ease 0s;
+        opacity 0.2s ease 0s;
     height: 48px;
     /* padding: 0px 24px; */
     background-color: rgb(31, 199, 212);
@@ -451,23 +460,24 @@
     width: 20px;
 }
 
-/* end lottery-card / end win container */
+/* End Lottery Card / End Win Container */
 
-/* start-connect-wallet */
+/* Start Connect Wallet */
 
 .components-con-wallet-contain {
     width: auto;
     min-width: 320px;
     max-width: 100%;
-
     overflow: hidden;
     background: rgb(255, 255, 255);
     box-shadow: rgb(14 14 44 / 10%) 0px 20px 36px -8px,
-    rgb(0 0 0 / 5%) 0px 1px 1px;
+        rgb(0 0 0 / 5%) 0px 1px 1px;
     border: 1px solid rgb(231, 227, 235);
     border-radius: 32px;
     max-height: 100vh;
     z-index: 100;
+   /* Modifica Design System */
+    width: 340px;
 }
 
 .componetns-con-wall-title-head {
@@ -481,22 +491,21 @@
 
 .componetns-con-wall-title-layout {
     display: flex;
-   -webkit-box-align: center;
-   align-items: center;
-   flex: 1 1 0%;
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 1 1 0%;
 }
 
 .components-con-wall-title-style {
-   font-size: 20px;
-   font-weight: 600;
-   line-height: 1.1;
-   color: rgb(40, 13, 95);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: rgb(40, 13, 95);
 }
 
 .components-con-wall-btn {
     padding: 0px;
     width: 48px;
-
     -webkit-box-align: center;
     align-items: center;
     border: 0px;
@@ -513,7 +522,7 @@
     opacity: 1;
     outline: 0px;
     transition: background-color 0.2s ease 0s,
-    opacity 0.2s ease 0s;
+        opacity 0.2s ease 0s;
     height: 48px;
     padding: 0px 24px;
     background-color: transparent;
@@ -525,6 +534,7 @@
     align-self: center;
     fill: rgb(31, 199, 212);
     flex-shrink: 0;
+    width: 20px;
 }
 
 .components-con-wall-content {
@@ -535,7 +545,7 @@
     width: 340px;
 }
 
-.components-con-wall-center {
+.components-con-wall-main {
     border-bottom: 1px solid rgb(231, 227, 235);
     max-height: 453px;
     overflow-y: auto;
@@ -543,7 +553,7 @@
     padding-bottom: 24px;
 }
 
-.components-con-wall-center-layout {
+.components-con-wall-main-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -558,7 +568,6 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-
     border: 0px;
     border-radius: 16px;
     cursor: pointer;
@@ -570,7 +579,7 @@
     opacity: 1;
     outline: 0px;
     transition: background-color 0.2s ease 0s,
-    opacity 0.2s ease 0s;
+        opacity 0.2s ease 0s;
     padding: 16px 24px;
     background-color: transparent;
     color: rgb(31, 199, 212);
@@ -578,14 +587,15 @@
     width: 100%;
 }
 
-.components-con-wall-svg-fox {
+.components-con-wall-svg-sty {
     align-self: center;
     fill: rgb(40, 13, 95);
     flex-shrink: 0;
     margin-bottom: 8px;
+    width: 40px;
 }
 
-.components-con-wall-metamask {
+.components-con-wall-text-sty {
     color: rgb(40, 13, 95);
     font-weight: 400;
     line-height: 1.5;
@@ -604,7 +614,7 @@
     opacity: 1;
     outline: 0px;
     transition: background-color 0.2s ease 0s,
-    opacity 0.2s ease 0s;
+        opacity 0.2s ease 0s;
     padding: 16px 24px;
     background-color: transparent;
     color: rgb(31, 199, 212);
@@ -612,9 +622,1289 @@
     width: 100%;
 }
 
-.components-con-wall-svg-wallet-connect {
+.components-con-wall-btn-trust-wall {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s,
+        opacity 0.2s ease 0s;
+    padding: 16px 24px;
+    background-color: transparent;
+    color: rgb(31, 199, 212);
+    box-shadow: none;
+    width: 100%;
+}
+
+.components-con-wall-btn-more {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s,
+        opacity 0.2s ease 0s;
+    padding: 16px 24px;
+    background-color: transparent;
+    color: rgb(31, 199, 212);
+    box-shadow: none;
+    width: 100%;
+}
+
+.components-con-wall-svg-trust-wall {
     align-self: center;
-    fill: rgb(40, 13, 95);
+    fill: rgb(122, 110, 170);
     flex-shrink: 0;
     margin-bottom: 8px;
 }
+
+.components-con-wall-footer-layout {
+    padding: 24px;
+}
+
+.components-con-wall-footer-text {
+    color: rgb(122, 110, 170);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.components-con-wall-footer-a {
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s,
+        opacity 0.2s ease 0s;
+    height: 48px;
+    padding: 0px 24px;
+    background-color: rgb(122, 110, 170);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    text-decoration: none;
+}
+
+/* End Connect Wallet */
+
+/* Start Swap */
+
+.components-swap-container {
+    width: 328px;
+    margin-top: 0px;
+    margin-right: 0px;
+}
+
+.components-swap-position {
+    border-radius: 24px;
+    max-width: 436px;
+    width: 100%;
+    z-index: 1;
+    background: rgb(231, 227, 235);
+    color: rgb(40, 13, 95);
+    overflow: hidden;
+    position: relative;
+    padding: 1px 1px 3px;
+}
+
+.components-swap-style {
+    width: 100%;
+    height: 100%;
+    overflow: inherit;
+    background: rgb(255, 255, 255);
+    border-radius: 24px;
+}
+
+.components-swap-header {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 24px;
+    width: 100%;
+    border-bottom: 1px solid rgb(231, 227, 235);
+}
+
+.components-swap-header-layout {
+    display: flex;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.components-swap-btn-graph {
+    color: rgb(122, 110, 170);
+    padding: 0px;
+    width: 32px;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s,
+        opacity 0.2s ease 0s;
+    height: 32px;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.components-swap-svg-graph {
+    align-self: center;
+    fill: rgb(122, 110, 170);
+    flex-shrink: 0;
+    width: 20px;
+}
+
+.components-swap-header-text-lay {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.components-swap-header-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: rgb(40, 13, 95);
+    margin-bottom: 8px
+}
+
+.components-swap-header-text-lay {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.components-swap-header-text {
+    color: rgb(122, 110, 170);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.components-swap-header-btns-lay {
+    display: flex;
+}
+
+.components-swap-header-btn-l-lay {
+    display: inline-flex;
+    position: relative;
+}
+
+.components-swap-header-btn-l-lay2 {
+    display: flex;
+}
+
+.components-swap-header-btn-l-style {
+    padding: 0px;
+    width: 32px;
+
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s,
+        opacity 0.2s ease 0s;
+    height: 32px;
+    background-color: transparent;
+    color: rgb(31, 199, 212);
+    box-shadow: none;
+    margin-right: 0px;
+}
+
+.components-swap-header-svg-gear {
+    align-self: center;
+    fill: rgb(122, 110, 170);
+    flex-shrink: 0;
+    height: 24;
+    width: 24;
+}
+
+.components-swap-header-failure {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 10px;
+    height: 10px;
+    pointer-events: none;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: rgb(237, 75, 158);
+}
+
+.components-swap-header-btn-r-style {
+    padding: 0px;
+    width: 32px;
+
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s,
+        opacity 0.2s ease 0s;
+    height: 32px;
+    background-color: transparent;
+    color: rgb(31, 199, 212);
+    box-shadow: none;
+}
+
+.components-swap-header-svg-recent {
+    align-self: center;
+    fill: rgb(122, 110, 170);
+    flex-shrink: 0;
+    width: 24px;
+}
+
+.components-swap-main-pos {
+    position: relative;
+    padding: 1rem;
+}
+
+.components-swap-main-lay {
+    display: grid;
+    grid-auto-rows: auto;
+    row-gap: 12px;
+}
+
+.components-swap-btns-lay {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.components-swap-btns-sty {
+    padding: 0px 0.5rem;
+
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s,
+        opacity 0.2s ease 0s;
+    height: 32px;
+    background-color: transparent;
+    color: rgb(31, 199, 212);
+    box-shadow: none;
+}
+
+.components-swap-bnb-cake-text-lay {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.components-swap-bnb-svg {
+    margin-right: 8px;
+    align-self: center;
+    fill: rgb(40, 13, 95);
+    flex-shrink: 0;
+    width: 24px;
+}
+
+.components-swap-bnb-cake-style {
+    color: rgb(40, 13, 95);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.components-swap-bnb-cake-svg-arrow {
+    align-self: center;
+    fill: rgb(40, 13, 95);
+    flex-shrink: 0;
+    width: 20px;
+}
+
+.components-swap-inp-lay {
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+.components-swap-inp-sty {
+    border-radius: 16px;
+    background-color: rgb(238, 234, 244);
+    box-shadow: rgb(74 74 104 / 10%) 0px;
+}
+
+.components-swap-inp-lay2 {
+    display: flex;
+    flex-flow: row nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(40, 13, 95);
+    font-size: 0.75rem;
+    line-height: 1rem;
+    padding: 0.75rem 1rem 0px
+}
+
+.components-swap-inp-lay3 {
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+
+    width: 100%;
+    display: flex;
+    padding: 0px;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.components-swap-input-sty2 {
+    color: rgb(40, 13, 95);
+    width: 0px;
+    position: relative;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    flex: 1 1 auto;
+    background-color: transparent;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0px;
+    text-align: right;
+    appearance: textfield;
+}
+
+.components-swap-inp-lay4 {
+    display: flex;
+    flex-flow: row nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    padding: 0.75rem 0.75rem 0.75rem 1rem;
+}
+
+.components-swap-btn-arrow-lay {
+    display: grid;
+    grid-auto-rows: auto;
+}
+
+.components-swap-btn-arrow-space {
+    padding: 0px 1rem;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.components-swap-btn-arrow-sty {
+    padding: 0px;
+    width: 32px;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s,
+        opacity 0.2s ease 0s;
+    height: 32px;
+    background-color: rgb(238, 234, 244);
+    color: rgb(122, 110, 170);
+    box-shadow: none;
+}
+
+.components-swap-svg-arrow {
+    align-self: center;
+    fill: rgb(31, 199, 212);
+    flex-shrink: 0;
+    width: 16px;
+}
+
+.components-swap-cake-img {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    max-width: 100%;
+}
+
+.components-swap-foot-lay {
+    padding: 0px 16px;
+    display: grid;
+    grid-auto-rows: auto;
+    row-gap: 8px;
+}
+
+.components-swap-foot-btn-sp {
+    margin-top: 1rem;
+}
+
+.components-swap-foot-btn {
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s,
+        opacity 0.2s ease 0s;
+    height: 48px;
+    padding: 0px 24px;
+    background-color: rgb(31, 199, 212);
+    color: white;
+    width: 100%;
+}
+
+/* End Swap */
+
+/* Start Liquidity */
+
+.components-liquidity-container {
+    max-width: 436px;
+    width: 100%;
+    z-index: 1;
+    background: rgb(231, 227, 235);
+    border-radius: 24px;
+    color: rgb(40, 13, 95);
+    overflow: hidden;
+    position: relative;
+    padding: 1px 1px 3px;
+    /* Modifica Design System */
+    width: 436px;
+}
+
+.components-liquidity-sty {
+    width: 100%;
+    height: 100%;
+    overflow: inherit;
+    background: rgb(255, 255, 255);
+    border-radius: 24px;
+}
+
+.components-liquidity-head-sty {
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 24px;
+    width: 100%;
+    border-bottom: 1px solid rgb(231, 227, 235);
+    display: flex;
+}
+
+.components-liquidity-head-lay {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.components-liquidity-head-text-lay {
+    display: flex;
+    flex-direction: column;
+}
+
+.components-liquidity-head-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: rgb(40, 13, 95);
+    margin-bottom: 8px;
+}
+
+.components-liquidity-remove-lay {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.components-liquidity-remove-sty {
+    color: rgb(122, 110, 170);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.components-liquidity-btns-lay {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.components-liquidity-btn-l-pos {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.components-liquidity-btn-l-lay {
+    display: flex;
+}
+
+.components-liquidity-btn-l-sty {
+    padding: 0px;
+    width: 32px;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s,
+        opacity 0.2s ease 0s;
+    height: 32px;
+    background-color: transparent;
+    color: rgb(31, 199, 212);
+    box-shadow: none;
+    margin-right: 8px;
+}
+
+.components-liquidity-svg-sty {
+    align-self: center;
+    fill: rgb(122, 110, 170);
+    flex-shrink: 0;
+    height: 24;
+    width: 24;
+}
+
+.components-liquidity-failure {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 10px;
+    height: 10px;
+    pointer-events: none;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: rgb(237, 75, 158);
+}
+
+.components-liquidity-btn-r-sty {
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s,
+        opacity 0.2s ease 0s;
+    height: 48px;
+    background-color: transparent;
+    color: rgb(31, 199, 212);
+    box-shadow: none;
+    padding: 0px;
+    margin-left: 16px;
+}
+
+.components-liqudity-main-lay {
+    background-color: rgb(238, 238, 238);
+    padding: 24px;
+}
+
+.components-liqudity-main-text-sty {
+    color: rgb(122, 110, 170);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.components-liqudity-foot-lay {
+    text-align: center;
+    border-top: 1px solid rgb(231, 227, 235);
+    padding: 24px;
+}
+
+.components-liqudity-foot-a {
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s,
+        opacity 0.2s ease 0s;
+    height: 48px;
+    padding: 0px 24px;
+    background-color: rgb(31, 199, 212);
+    color: white;
+    width: 100%;
+    text-decoration: none;
+}
+
+.components-liqudity-foot-svg {
+    align-self: center;
+    fill: white;
+    flex-shrink: 0;
+    margin-right: 0.5rem;
+    width: 20px;
+}
+
+/* End Liquidity */
+
+/* Start Info Analytics */
+
+.components-liquidity-chart-pos {
+    width: 100%;
+    background: rgb(231, 227, 235);
+    border-radius: 24px;
+    color: rgb(40, 13, 95);
+    overflow: hidden;
+    position: relative;
+    padding: 1px 1px 3px;
+
+    /* Modifica Design System */
+    width: 566px;
+    height: 382px;
+}
+
+.components-liquidity-chart-sty {
+    width: 100%;
+    height: 100%;
+    overflow: inherit;
+    background: rgb(255, 255, 255);
+    border-radius: 24px;
+}
+
+.components-liquidity-chart-pad {
+    padding: 24px;
+}
+
+.components-liquidity-chart-text {
+    color: rgb(118, 69, 217);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.components-liquidity-chart-mon {
+    color: rgb(40, 13, 95);
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 24px;
+}
+
+.components-liquidity-chart-date {
+    color: rgb(40, 13, 95);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.liquidity-chart-img {
+    width: 518px;
+}
+
+/* End Info Analytics */
+
+/* Start Tokens */
+
+.components-tokens-container {
+    display: flex;
+    width: 100%;
+    padding-top: 16px;
+    flex-direction: column;
+    gap: 16px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 24px;
+    border: 1px solid rgb(231, 227, 235);
+    /* Modifica Design System */
+    width: 1152px;
+}
+
+.components-tokens-header-lay {
+    display: grid;
+    gap: 1em;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px 24px;
+    grid-template-columns: 20px 3fr repeat(4, 1fr);
+}
+
+.components-tokens-hashtag {
+    color: rgb(118, 69, 217);
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 12px;
+}
+
+.components-tokens-header-text {
+    cursor: pointer;
+    color: rgb(118, 69, 217);
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.components-tokens-border {
+    height: 1px;
+    background-color: rgb(231, 227, 235);
+    width: 100%;
+}
+
+.components-tokens-a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.components-tokens-a-content {
+    display: grid;
+    gap: 1em;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px 24px;
+    grid-template-columns: 20px 3fr repeat(4, 1fr);
+}
+
+.components-tokens-number-lay {
+    display: flex;
+}
+
+.components-tokens-number-sty {
+    color: rgb(40, 13, 95);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.components-tokens-first-text-lay {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.components-tokens-img {
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    box-shadow: rgb(0 0 0 / 8%) 0px 6px 10px;
+    background-color: rgb(250, 249, 250);
+    color: rgb(40, 13, 95);
+}
+
+.components-tokens-first-text-lay2 {
+    display: flex;
+    margin-left: 10px;
+}
+
+.components-tokens-text-out-sty {
+    color: rgb(40, 13, 95);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.components-tokens-text-in-sty {
+    color: rgb(40, 13, 95);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-left: 8px;
+}
+
+.components-tokens-text-failure {
+    color: rgb(237, 75, 158);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.componnents-tokens-foot-lay {
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-top: 0.2em;
+    margin-bottom: 1.2em;
+}
+
+.components-tokens-arrows-sty {
+    color: rgb(31, 199, 212);
+    padding: 0px 20px;
+}
+
+.components-tokens-l-arrow-svg {
+    align-self: center;
+    fill: rgb(189, 194, 196);
+    flex-shrink: 0;
+    width: 20px;
+}
+
+.components-tokens-r-arrow-svg {
+    align-self: center;
+    fill: rgb(31, 199, 212);
+    flex-shrink: 0;
+    width: 20px;
+}
+
+/* Start Win Cards */
+
+.components-card-exp-liv-lat {
+    margin-right: 16px;
+    width: 320px;
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+    transition-property: transform,
+        -webkit-transform;
+}
+
+.components-card-ex-li-la-pos {
+    position: relative;
+}
+
+.components-card-exp-sty {
+    opacity: 0.7;
+    transition: opacity 300ms ease 0s;
+    background: rgb(231, 227, 235);
+    border-radius: 24px;
+    color: rgb(40, 13, 95);
+    overflow: hidden;
+    position: relative;
+    padding: 1px 1px 3px;
+}
+
+.components-card-ex-li-la-sty {
+    width: 100%;
+    height: 100%;
+    overflow: initial;
+    background: rgb(255, 255, 255);
+    border-radius: 24px;
+}
+
+.components-card-exp-li-la-head-sty {
+    -webkit-box-align: center;
+    align-items: center;
+    background: rgb(231, 227, 235);
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    height: 37px;
+    padding: 8px;
+}
+
+.components-card-exp-li-la-head-cont-l-lay {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.components-card-exp-head-l-svg {
+    align-self: center;
+    fill: rgb(189, 194, 196);
+    flex-shrink: 0;
+    margin-right: 4px;
+    width: 21px;
+}
+
+.components-card-head-text-exp {
+    color: rgb(189, 194, 196);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 21px;
+}
+
+.components-card-head-hashtag-lay {
+    justify-self: center;
+}
+
+.componetns-card-head-hashatag-sty {
+    color: rgb(189, 194, 196);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 12px;
+    text-align: center;
+}
+
+.components-card-ex-li-la-contnt-pad {
+    position: relative;
+    padding: 16px;
+}
+
+.components-card-up-pos {
+    position: relative;
+    margin-bottom: -1px;
+}
+
+.components-card-up-dow-cont {
+    height: 65px;
+    margin: 0px auto;
+    width: 240px;
+}
+
+.components-card-up-dow-svg {
+    align-self: center;
+    fill: rgb(40, 13, 95);
+    flex-shrink: 0;
+    height: 65px;
+    width: 240px;
+}
+
+.componets-card-up-dow-lay {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    left: 0px;
+    height: 100%;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+.componets-card-text-up {
+    color: rgb(49, 208, 170);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 21px;
+}
+
+.componets-card-up-dow-text-lay {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 14px;
+}
+
+.componets-card-up-num-sty {
+    color: rgb(122, 110, 170);
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.componets-card-up-num-text-sty {
+    color: rgb(122, 110, 170);
+    font-weight: 400;
+    line-height: 1.5;
+    margin-left: 4px;
+    font-size: 14px;
+}
+
+.components-card-cent-sty {
+    background: rgb(237, 75, 158);
+    border-radius: 16px;
+    padding: 2px;
+}
+
+.components-card-cent-cont-sty {
+    background: rgb(255, 255, 255);
+    border-radius: 14px;
+    padding: 16px;
+}
+
+.components-card-cent-text {
+    color: rgb(122, 110, 170);
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.components-card-cent-cont-lay {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.components-card-cent-fail {
+    color: rgb(237, 75, 158);
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 24px;
+}
+
+.components-card-cent-r-lay {
+    background-color: rgb(237, 75, 158);
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+.components-card-cent-arrow-svg {
+    align-self: center;
+    fill: white;
+    flex-shrink: 0;
+    width: 20px;
+}
+
+.components-card-cent-r-text {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-left: 4px;
+}
+
+.components-gen-text-sty {
+    color: rgb(40, 13, 95);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.components-card-cent-dow-sty {
+    color: rgb(40, 13, 95);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.components-card-dow-pos {
+    position: relative;
+    margin-top: -1px;
+}
+
+.componets-card-dow-num-sty {
+    color: white;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.componets-card-dow-l-text-sty {
+    color: white;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-left: 4px;
+    font-size: 14px;
+}
+
+.componets-card-down-text-sty {
+    color: white;
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+/* Components Card Later */
+
+.components-card-lat-sty {
+    background: rgb(231, 227, 235);
+    border-radius: 24px;
+    color: rgb(40, 13, 95);
+    overflow: hidden;
+    position: relative;
+    padding: 1px 1px 3px;
+}
+
+.componennts-card-clock-svg {
+    align-self: center;
+    fill: rgb(40, 13, 95);
+    flex-shrink: 0;
+    margin-right: 4px;
+    width: 21px;
+}
+
+.components-card-lat-head-text-sty {
+    color: rgb(40, 13, 95);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 21px;
+}
+
+.componetns-card-lat-head-hashatag-sty {
+    color: rgb(122, 110, 170);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 12px;
+    text-align: center;
+}
+.componetns-card-lat-contnt-pad {
+    padding: 16px;
+}
+
+.componetns-card-lat-up-text-sty {
+    color: rgb(189, 194, 196);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 21px;
+}
+
+.components-card-lat-cent-sty {
+    background: rgb(231, 227, 235);
+    border-radius: 16px;
+    padding: 2px;
+}
+
+.components-card-lat-cent-text-sty {
+    color: rgb(40, 13, 95);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.components-card-lat-cent-time-sty {
+    color: rgb(40, 13, 95);
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 24px;
+}
+
+.components-card-lat-dow-text-sty {
+    color: rgb(189, 194, 196);
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
