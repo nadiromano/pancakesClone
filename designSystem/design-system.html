@@ -1,142 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home page Pancake</title>
-    <link rel="stylesheet" href="../style.css" />
-  </head>
-  <body>
-    <!--Logo and icons-->
-    <!--Colors-->
-    <div class="design-sistem--container">
-      <h1 class="desig-sistem--title">Colors</h1>
-      <div class="color-container">
-        <h2 class="color-container-title">primary-colors</h2>
 
-        <div class="cont primary-color-container">
-          <div class="color-wrapper">
-            <div class="color primary-color"></div>
-            <h4 class="color-title">primary-color</h4>
-            <p class="color-description">rgb(118, 69, 217)</p>
-          </div>
-          <div class="color-wrapper">
-            <div class="color secundary-color"></div>
-            <h4 class="color-title">secundary-color</h4>
-            <p class="color-description">rgb(31, 199, 212)</p>
-          </div>
-          <div class="color-wrapper">
-            <div class="color terciary-color"></div>
-            <h4 class="color-title">terciary-color</h4>
-            <p class="color-description">rgb(237, 75, 158)</p>
-          </div>
-          <div class="color-wrapper">
-            <div class="color accent-color"></div>
-            <h4 class="color-title">accent-color</h4>
-            <p class="color-description">rgb(255, 178, 55)</p>
-          </div>
-          <div class="color-wrapper">
-            <div class="color success-color"></div>
-            <h4 class="color-title">success-color</h4>
-            <p class="color-description">rgb(49, 208, 170)</p>
-          </div>
-          <div class="color-wrapper">
-            <div class="color success-color--hover"></div>
-            <h4 class="color-title">success-color--hover</h4>
-            <p class="color-description">rgba(49, 208, 170, 0.65)</p>
-          </div>
-        </div>
-        <h2 class="color-container-title">backgrounds-colors</h2>
-        <div class="cont grad-color-container">
-          <div class="color-wrapper">
-            <div class="color bg-color--grad"></div>
-            <h4 class="color-title">bg-color--grad</h4>
-            <p class="color-description">
-              linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%)
-            </p>
-          </div>
-          <div class="color-wrapper">
-            <div class="color bg-color--grad-block"></div>
-            <h4 class="color-title">bg-color--grad-block</h4>
-            <p class="color-description">
-              linear-gradient( 139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239,
-              255) 100% );
-            </p>
-          </div>
-          <div class="color-wrapper">
-            <div class="color bg-color--grad-blue"></div>
-            <h4 class="color-title">bg-color--grad-blue</h4>
-            <p class="color-description">
-              linear-gradient(rgb(111, 182, 241) 0%, rgb(234, 242, 246) 100%)
-            </p>
-          </div>
-          <div class="color-wrapper">
-            <div class="color bg-color--grad-violet"></div>
-            <h4 class="color-title">bg-color--grad-violet</h4>
-            <p class="color-description">
-              linear-gradient(rgb(226, 201, 251) 0%, rgb(205, 184, 250) 100%)
-            </p>
-          </div>
-          <div class="color-wrapper">
-            <div class="color bg-color--grad-violet-dark"></div>
-            <h4 class="color-title">bg-color--grad-violet-dark</h4>
-            <p class="color-description">
-              linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%)
-            </p>
-          </div>
-          <div class="color-wrapper">
-            <div class="color bg-color--grad-light"></div>
-            <h4 class="color-title">bg-color--grad-light</h4>
-            <p class="color-description">
-              linear-gradient( 111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242,
-              246) 100% );
-            </p>
-          </div>
-          <div class="color-wrapper">
-            <div class="color bg-color--light"></div>
-            <h4 class="color-title">bg-color--light</h4>
-            <p class="color-description">rgb(250, 249, 250)</p>
-          </div>
-          <div class="color-wrapper">
-            <div class="color bg-color--dark"></div>
-            <h4 class="color-title">bg-color--dark</h4>
-            <p class="color-description">rgb(39, 38, 44)</p>
-          </div>
-        </div>
-        <h2 class="color-container-title">typography-colors</h2>
-        <div class="cont typo-color-container">
-          <div class="color-wrapper">
-            <div class="color h2-color"></div>
-            <h4 class="color-title">h2-color</h4>
-            <p class="color-description">rgb(40, 13, 95)</p>
-          </div>
-          <div class="color-wrapper">
-            <div class="color subtle-color"></div>
-            <h4 class="color-title">subtle-color</h4>
-            <p class="color-description">rgb(122, 110, 170)</p>
-          </div>
-        </div>
-        <h2 class="color-container-title">components-colors</h2>
-        <div class="cont component-color-container">
-          <div class="color-wrapper">
-            <div class="color formBg-color"></div>
-            <h4 class="color-title">formBg-color</h4>
-            <p class="color-description">rgb(238, 234, 244)</p>
-          </div>
-          <div class="color-wrapper">
-            <div class="color gray-color"></div>
-            <h4 class="color-title">gray-color</h4>
-            <p class="color-description">rgb(231, 227, 235)</p>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home page Pancake</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+  <!--Logo and icons-->
+  <div class="design-sistem--container">
+    <h1 class="desig-sistem--title">Loghi</h1>
+    <div class="loghi-container">
+
+      <!--logo desktop-->
+      <div class="logo-box">
+        <h4 class="logo-icone-tab-title">Logo desktop</h4>
+       <div>
+          <a href="#" class="logo-container">
+           <img class ="desktop-logo"src="../Assets1/logoDesktop.svg" />
+          </a>
         </div>
       </div>
-      <!--Typography-->
-      <!--Spacing-->
-      <!--Buttons-->
-      <!--Forms-->
-      <!--Tabs-->
-      <!--Components-->
+
+      <!--logo mobile-->
+      <div class="logo-box">
+        <h4 class="logo-icone-tab-title">Logo Mobile</h4>
+        <div>
+          <a href="#" class="logo-container">
+            <img src="../Assets1/logoMobile.svg" class="mobile-logo"/>
+          </a>
+        </div>
+      </div>
+
+      <!--logo footer-->
+      <div class="logo-box">
+        <h4 class="logo-icone-tab-title">Logo footer </h4>
+        <div class="logo-bcg-dark">
+          <a href="#" class="logo-container">
+            <img src="../Assets1/logoFooter.svg"/>
+          </a>
+        </div>
+      </div>
+
     </div>
-  </body>
+  </div>
+  <h1 class="desig-sistem--title">Icone</h1>
+  <div class="box-icone-generale">
+
+    <div class="box-icone">
+      <div class="gear">
+        <img src="../Assets1/gear.svg" />
+      </div>
+      <div class="language">
+        <img src="../Assets1/language.svg" />
+      </div>
+      <div class="prediction">
+        <img src="../Assets1/prediction.svg" />
+      </div>
+      <div class="lottery">
+        <img src="../Assets1/lottery.svg" />
+      </div>
+      <div class="users">
+        <img src="../Assets1/users.svg" />
+      </div>
+      <div class="trades">
+        <img src="../Assets1/trades.svg" />
+      </div>
+      <div class="staked">
+        <img src="../Assets1/staked.svg" />
+      </div>
+      <div class="bunny">
+        <img src="../Assets1/bunny.svg" />
+      </div>
+
+      <div class="pancakes">
+        <img src="../Assets1/pancakes.svg">
+      </div>
+      <div class="twitter">
+        <img src="../Assets1/twitter.svg" />
+      </div>
+      <div class="telegram">
+        <img src="../Assets1/telegram.svg" />
+      </div>
+      <div class="reddit">
+        <img src="../Assets1/reddit.svg" />
+      </div>
+      <div class="instagram">
+        <img src="../Assets1/instagram.svg" />
+      </div>
+      <div class="github">
+        <img src="../Assets1/github.svg" />
+      </div>
+      <div class="discord">
+        <img src="../Assets1/discord.svg" />
+      </div>
+      <div class="question">
+        <img src="../Assets1/questionMark.svg"/>
+    </div>
+    <div class="coppa">
+      <img src="../Assets1/cup.svg"/>
+  </div>
+<div class="tempo">
+  <img src="../Assets1/icone-tempo.svg"/>
+</div>
+<div class="play">
+  <img src="../Assets1/icona-play.svg"/>
+</div>
+
+  <div class="icona-freccia-sx">
+      <img src="../Assets1/freccia-sx.svg"/>  
+</div>
+<div class="icona-freccia-dx">
+  <img src="../Assets1/freccia-dx.svg"/>
+</div>
+
+
+<div class="icona-frecce-orizz">
+<img src="../Assets1/frecce-orizz.svg"/>
+</div>
+     <div class="icona-freccia-ridim">
+<img src="../Assets1/freccia-ridim.svg"/>
+     </div>
+   
+    
+  <div class="icona-grafico">
+   <img src="../Assets1/grafico.svg"/>
+  </div>
+     <div class="icona-circle-gialla">
+<img src="../Assets1/icona-tonda-gialla.svg" />
+     </div>
+     
+<div class="icona-coniglio-card">
+<img src="../Assets1/card-coniglio.svg"/>
+</div>
+               <div class="icona-moneta icona-moneta-con-media">
+             <img src="../Assets1/moneta.svg" class="icona-moneta icona-moneta-con-media"/>
+            </div>
+            <div class="icon-basic-svg">
+              <img src="../Assets1/icona-basic-schermo-mobile.svg" class="icona-basic-svg"/>
+            </div>
+                <div class="icon-trading-svg">
+                  <img src="../Assets1/icona-trading-mobile.svg" class="icona-trading-svg"/>
+                </div>
+              
+                <div class="icona-freccia-piena-verso-basso">
+                  <img src="../Assets1/freccia-piena-giu.svg" class="icona-freccia-piena-verso-basso"/>
+                </div>
+
+
+               <div class="icona-freccia-verso-basso">
+<img src="../Assets1/icona-freccia-basso.svg" class="icona-freccia-verso-basso"/>
+               </div>
+                
+<div class="icona-freccia-details">
+<img src="../Assets1/freccia-details.svg" class="icona-freccia-details">
+</div>
+               
+<div class="icona-sveglia-con-media icona-sveglia">
+<img src="../Assets1/icona-sveglia.svg" class="icona-sveglia-con-media icona-sveglia">
+</div>
+               
+                <!---->
+                
+    </div>
+  </div>
+
+  <!--Colors-->
+  <div class="design-sistem--container">
+    <h1 class="desig-sistem--title">Colors</h1>
+    <div class="color-container">
+      <h2 class="color-container-title">primary-colors</h2>
+
+      <div class="cont primary-color-container">
+        <div class="color-wrapper">
+          <div class="color primary-color"></div>
+          <h4 class="color-title">primary-color</h4>
+          <p class="color-description">rgb(118, 69, 217)</p>
+        </div>
+        <div class="color-wrapper">
+          <div class="color secundary-color"></div>
+          <h4 class="color-title">secundary-color</h4>
+          <p class="color-description">rgb(31, 199, 212)</p>
+        </div>
+        <div class="color-wrapper">
+          <div class="color terciary-color"></div>
+          <h4 class="color-title">terciary-color</h4>
+          <p class="color-description">rgb(237, 75, 158)</p>
+        </div>
+        <div class="color-wrapper">
+          <div class="color accent-color"></div>
+          <h4 class="color-title">accent-color</h4>
+          <p class="color-description">rgb(255, 178, 55)</p>
+        </div>
+        <div class="color-wrapper">
+          <div class="color success-color"></div>
+          <h4 class="color-title">success-color</h4>
+          <p class="color-description">rgb(49, 208, 170)</p>
+        </div>
+        <div class="color-wrapper">
+          <div class="color success-color--hover"></div>
+          <h4 class="color-title">success-color--hover</h4>
+          <p class="color-description">rgba(49, 208, 170, 0.65)</p>
+        </div>
+      </div>
+      <h2 class="color-container-title">backgrounds-colors</h2>
+      <div class="cont grad-color-container">
+        <div class="color-wrapper">
+          <div class="color bg-color--grad"></div>
+          <h4 class="color-title">bg-color--grad</h4>
+          <p class="color-description">
+            linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%)
+          </p>
+        </div>
+        <div class="color-wrapper">
+          <div class="color bg-color--grad-block"></div>
+          <h4 class="color-title">bg-color--grad-block</h4>
+          <p class="color-description">
+            linear-gradient( 139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239,
+            255) 100% );
+          </p>
+        </div>
+        <div class="color-wrapper">
+          <div class="color bg-color--grad-blue"></div>
+          <h4 class="color-title">bg-color--grad-blue</h4>
+          <p class="color-description">
+            linear-gradient(rgb(111, 182, 241) 0%, rgb(234, 242, 246) 100%)
+          </p>
+        </div>
+        <div class="color-wrapper">
+          <div class="color bg-color--grad-violet"></div>
+          <h4 class="color-title">bg-color--grad-violet</h4>
+          <p class="color-description">
+            linear-gradient(rgb(226, 201, 251) 0%, rgb(205, 184, 250) 100%)
+          </p>
+        </div>
+        <div class="color-wrapper">
+          <div class="color bg-color--grad-violet-dark"></div>
+          <h4 class="color-title">bg-color--grad-violet-dark</h4>
+          <p class="color-description">
+            linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%)
+          </p>
+        </div>
+        <div class="color-wrapper">
+          <div class="color bg-color--grad-light"></div>
+          <h4 class="color-title">bg-color--grad-light</h4>
+          <p class="color-description">
+            linear-gradient( 111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242,
+            246) 100% );
+          </p>
+        </div>
+        <div class="color-wrapper">
+          <div class="color bg-color--light"></div>
+          <h4 class="color-title">bg-color--light</h4>
+          <p class="color-description">rgb(250, 249, 250)</p>
+        </div>
+        <div class="color-wrapper">
+          <div class="color bg-color--dark"></div>
+          <h4 class="color-title">bg-color--dark</h4>
+          <p class="color-description">rgb(39, 38, 44)</p>
+        </div>
+      </div>
+      <h2 class="color-container-title">typography-colors</h2>
+      <div class="cont typo-color-container">
+        <div class="color-wrapper">
+          <div class="color h2-color"></div>
+          <h4 class="color-title">h2-color</h4>
+          <p class="color-description">rgb(40, 13, 95)</p>
+        </div>
+        <div class="color-wrapper">
+          <div class="color subtle-color"></div>
+          <h4 class="color-title">subtle-color</h4>
+          <p class="color-description">rgb(122, 110, 170)</p>
+        </div>
+      </div>
+      <h2 class="color-container-title">components-colors</h2>
+      <div class="cont component-color-container">
+        <div class="color-wrapper">
+          <div class="color formBg-color"></div>
+          <h4 class="color-title">formBg-color</h4>
+          <p class="color-description">rgb(238, 234, 244)</p>
+        </div>
+        <div class="color-wrapper">
+          <div class="color gray-color"></div>
+          <h4 class="color-title">gray-color</h4>
+          <p class="color-description">rgb(231, 227, 235)</p>
+        </div>
+      </div>
+    </div>
+    <!--Typography-->
+    <!--Spacing-->
+    <!--Buttons-->
+    <!--Forms-->
+    <!--Tabs-->
+    <div class="design-sistem--container">
+      <h1 class="desig-sistem--title">Tabs</h1>
+
+      <div class="tabs-container">
+
+        <div class="tab-box">
+
+          <div class="tab-box-menu-general-page">
+            <a href="" class="tabs-nenu-general-active">Trade</a>
+            <a href="" class="tabs-nenu-general">Earn</a>
+            <a href="" class="tabs-nenu-general">Win</a>
+            <a href="" class="tabs-nenu-general">NFT</a>
+            <a href="" class="tabs-nenu-general">...</a>
+          </div>
+        </div>
+
+        <div class="tab-box">
+
+          <div class="tab-box-top-farm-syrup-pools">
+            <h2 class="tab-scritta-top">Top
+              <span class="tab-scritta-switch-farm-syrup-pools"> Farms /</span>
+              <span class="tab-scritta-switch-farm-syrup-pools"> Syrup Pools</span>
+              <button class="tab-button-switch-farm-syrup-pools">
+                <svg viewBox="0 0 24 25" height="24px" width="24px" color="textSubtle"
+                  xmlns="http://www.w3.org/2000/svg" class="icona-svg-freccia-switch">
+                  <path
+                    d="M16 17.01V11C16 10.45 15.55 10 15 10C14.45 10 14 10.45 14 11V17.01H12.21C11.76 17.01 11.54 17.55 11.86 17.86L14.65 20.64C14.85 20.83 15.16 20.83 15.36 20.64L18.15 17.86C18.47 17.55 18.24 17.01 17.8 17.01H16ZM8.65003 3.35002L5.86003 6.14002C5.54003 6.45002 5.76003 6.99002 6.21003 6.99002H8.00003V13C8.00003 13.55 8.45003 14 9.00003 14C9.55003 14 10 13.55 10 13V6.99002H11.79C12.24 6.99002 12.46 6.45002 12.14 6.14002L9.35003 3.35002C9.16003 3.16002 8.84003 3.16002 8.65003 3.35002Z">
+                  </path>
+                </svg>
+              </button>
+            </h2>
+          </div>
+        </div>
+
+        <div class="tab-box">
+          <div class="tab-wrap-page-exchange-liquidity">
+            <a href="" class="tab-page-active">Exchange</a>
+            <a href="" class="tab-page">Liquidity</a>
+          </div>
+        </div>
+
+        <div class="tab-box">
+
+          <div class="tab-time-box">
+            <button class="tab-time-active">24H</button>
+            <button class="tab-time-button">1W</button>
+            <button class="tab-time-button">1M</button>
+            <button class="tab-time-button">1Y</button>
+          </div>
+        </div>
+
+              <div class="tab-box">
+              <div class="tabs-box-basic-tradingview">
+                <button class="tab-button-basic">Basic</button>
+                <button class="tab-button-trading-active">TradingView</button>
+                </div>
+                </div>
+                <!--Con media-->
+                <div class="tab-box">
+                <div class="tabs-box-basic-tradingview">
+                <button class="tab-button-basic">
+                  <img class="icon-basic-svg" src="../Assets1/icona-basic-schermo-mobile.svg"/>
+              </button>
+                <button class="tab-button-trading-active">
+                  <img class="icon-trading-svg"src="../Assets1/icona-trading-mobile.svg"/>
+                  
+              </button>
+              </div>
+            </div>
+          
+         <div class="tab-box">
+              <div class="tabs-button-bnb-cake-scritta">BNB<img class="icona-freccia-piena-verso-basso"src="../Assets1/freccia-piena-giu.svg">
+            </div>
+          <div class="tab-box-freccia-divisore-section-bnb-cake">
+            <button class="tab-button-freccia-divisore-section-bnb-cake">
+              <img class="icona-freccia-verso-basso" src="../Assets1/icona-freccia-basso.svg"/>
+    
+            </button>
+          </div>
+              <div class="tabs-button-bnb-cake-scritta">CAKE<img class="icona-freccia-piena-verso-basso"src="../Assets1/freccia-piena-giu.svg">
+            </div>
+          </div>
+
+        <div class="tab-box">
+          <div class="tab-version-box">
+            <button class="tab-button-v2-active">V2</button>
+            <button class="tab-button-v1">V1(old)</button>
+          </div>
+        </div>
+
+       
+        <div class="tab-box">
+          <div class="tab-wrap-box-freccia-details-desktop">
+            <div class="tab-box-freccia-details"> Details
+              <img class="icona-freccia-details" src="../Assets1/freccia-details.svg"/>
+              
+            </div>
+          </div>
+        </div>
+<div class="tab-box-cards-coniglio">
+  <button class="tab-button-cards-coniglio" scale="sm"> <img src="../Assets1/freccia-sx.svg">
+    
+  </button>
+  <div class="tab-box-img-cards-coniglio">
+      <img src="../Assets1/card-coniglio.svg">
+      </div>
+      <button class="tab-button-cards-coniglio" scale="sm"> <img src="../Assets1/freccia-dx.svg">
+      </button>
+      </div>
+      
+      </div>
+
+    </div>
+
+    <!--Components-->
+  </div>
+</body>
+
 </html>

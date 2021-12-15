@@ -1,8 +1,9 @@
 @import url(designSystem/designStyle/color.css);
 @import url(designSystem/designStyle/forms.css);
 @import url(designSystem/designStyle/ds-layout.css);
-
-*,
+@import url(designSystem/designStyle/tabs.css);
+@import url(designSystem/designStyle/logo-icone.css);
+*
 *::after,
 *::before {
   padding: 0;
