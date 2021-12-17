@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+
+:root {
+  --secundary-color: #1fc7d4;
+  --hover-color: rgb(31, 199, 212, 0.65);
+  --active-color: rgb(31, 199, 212, 0.85);
+  --border-rad: 16px;
+  --font-size: 16px;
+  --font-weigth: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit";
+}
+
+main {
+  padding: 2rem;
+}
+
+.button-Style--title {
+  font-family: sans-serif;
+  margin-left: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: rgb(118, 69, 217);
+  letter-spacing: 2px;
+}
+
+.button-Style--title::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 15%;
+  margin-top: 10px;
+  background-color: rgb(118, 69, 217);
+}
+
+/* contenitore del box contenente tutti i bottoni */
+.elements {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  font-size: var(--font-size);
+  margin-right: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: uppercase;
+}
+/* contenitori singoli delle varie tipologie dei bottoni */
+
+.buttonStandard {
+  border-radius: var(--border-rad);
+  border: 0px;
+  font-size: var(--font-size);
+  font-weight: var(--font-weigth);
+  height: 50px;
+  background-color: var(--secundary-color);
+  color: white;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  width: 165px;
+  height: 48px;
+  opacity: 1;
+}
+
+.buttonLarge {
+  border-radius: var(--border-rad);
+  border: 0px;
+  font-size: var(--font-size);
+  font-weight: var(--font-weigth);
+  height: 48px;
+  background-color: var(--secundary-color);
+  color: white;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  width: 240px;
+  height: 55px;
+  opacity: 1;
+}
+
+/* Versione con background bianco */
+.buttonMedium {
+  border-radius: var(--border-rad);
+  font-size: var(--font-size);
+  font-weight: var(--font-weigth);
+  opacity: 1;
+  color: var(--secundary-color);
+  background-color: rgb(255, 255, 255);
+  letter-spacing: 0.03em;
+  line-height: 1;
+  width: 132px;
+  height: 48px;
+  border: 2px solid var(--secundary-color);
+  box-shadow: none;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.buttonSmall {
+  border-radius: var(--border-rad);
+  border: 0px;
+  font-size: var(--font-size);
+  font-weight: var(--font-weigth);
+  height: 48px;
+  background-color: var(--secundary-color);
+  color: white;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  width: 108px;
+  height: 48px;
+  opacity: 1;
+}
+
+.buttonSquashed {
+  border-radius: var(--border-rad);
+  border: 0px;
+  font-size: var(--font-size);
+  font-weight: var(--font-weigth);
+  height: 48px;
+  background-color: var(--secundary-color);
+  color: white;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  width: 137px;
+  height: 32px;
+  opacity: 1;
+}
+
+.buttonHover:hover {
+  opacity: 0.65;
+}
+.buttonActive:active {
+  background-color: var(--active-color);
+  transform: translateY(1px);
+  box-shadow: none;
+}
