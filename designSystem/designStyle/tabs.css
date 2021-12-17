@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.tabs-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items:center;
+    align-items: center;
+    gap: 50px;
+}
+.tab-box {
+    display: grid;
+    justify-items:center;
+    align-items: center;
+}
+.tab-box-menu-general-page {
+    display: flex;
+}
+.tabs-nenu-general-active {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(118, 69, 217);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0px 16px;
+    height: 48px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.tabs-nenu-general {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(122, 110, 170);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0px 16px;
+    height: 48px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tab-box-top-farm-syrup-pools {
+    display: flex;
+}
+.tab-scritta-top {
+  font-size: 20px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: rgb(40, 13, 95);
+}
+.tab-scritta-switch-farm-syrup-pools {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.1;
+color: rgb(118, 69, 217);
+}
+.tab-button-switch-farm-syrup-pools {
+    padding: 0px;
+    width: 48px;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    background-color: transparent;
+    color: rgb(31, 199, 212);
+    box-shadow: none;
+    height: 100%;
+}
+
+.tab-wrap-page-exchange-liquidity {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: rgb(133 133 133 / 10%) 0px -2px 0px -8px inset;
+    display: flex;
+}
+@media screen and (min-width: 576px) {
+    .tab-wrap-page-exchange-liquidity {
+     -webkit-box-pack: center;
+    justify-content : center;
+    padding-left: 0px;
+}
+}
+.tab-page-active {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(118, 69, 217);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 4px 4px 0px;
+    height: 42px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.tab-page {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(122, 110, 170);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px 4px 0px;
+    height: 42px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.tab-time-box {
+    background-color: rgb(239, 244, 245);
+    border-radius: 16px;
+    display: inline-flex;
+    border: 1px solid rgb(233, 234, 235);
+    width: auto;
+}
+
+.tab-time-button {
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: 32px;
+    padding: 0px 16px;
+    color: white;
+    background-color: transparent;
+    color: rgb(31, 199, 212);
+}
+.tab-time-active {
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: 32px;
+    padding: 0px 16px;
+    background-color: rgb(31, 199, 212);
+    color: white;
+}
+  .tabs-box-basic-tradingview{
+      display: flex;
+  }
+  .tab-button-basic{
+  padding: 4px 8px;
+    border-radius: 6px;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: Kanit, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: 32px;
+    background-color: transparent;
+    color: rgb(31, 199, 212);
+    box-shadow: none;
+    margin-right: 8px;
+}
+.tab-button-trading-active{
+background-color: rgba(31, 199, 212, 0.06);
+    padding: 4px 8px;
+    border-radius: 6px;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: Kanit, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: 32px;
+    color: rgb(31, 199, 212);
+    box-shadow: none;
+}
+
+.tab-version-box {
+    background-color: rgb(238, 234, 244);
+    border-radius: 16px;
+    display: inline-flex;
+    border: 1px solid rgb(215, 202, 236);
+    width: auto;
+}
+.tab-button-v2-active {
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: Kanit, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: 32px;
+    padding: 0px 16px;
+    background-color: rgb(122, 110, 170);
+    color: rgb(255, 255, 255);
+}
+.tab-button-v1 {
+-webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: Kanit, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: 32px;
+    padding: 0px 16px;
+    background-color: transparent;
+    color: rgb(122, 110, 170);
+}
+
+
+.tabs-button-bnb-cake-scritta {
+color: rgb(40, 13, 95);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.tab-box-freccia-divisore-section-bnb-cake {
+padding: 0px 1rem;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.tab-button-freccia-divisore-section-bnb-cake {
+    padding: 0px;
+    width: 32px;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: 32px;
+    background-color: rgb(238, 234, 244);
+    color: rgb(122, 110, 170);
+    box-shadow: none;
+}
+
+.tab-wrap-box-freccia-details-desktop {
+padding: 24px 8px 24px 0px;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.tab-box-freccia-details {
+    padding-right: 0px;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    color: rgb(31, 199, 212);
+}
+.tab-box-cards-coniglio {
+    display: flex;
+}
+.tab-button-cards-coniglio {
+padding: 0px;
+    width: 32px;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: 32px;
+    background-color: transparent;
+    color: rgb(31, 199, 212);
+    box-shadow: none;
+}

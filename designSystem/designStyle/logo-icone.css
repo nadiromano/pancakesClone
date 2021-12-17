@@ -1,0 +1,215 @@
+.logo-icone-tab-title {
+  font-family: sans-serif;
+  font-size: 12px;
+  margin-left: 20px;
+  width: 150px;
+  text-transform: uppercase;
+}
+ /* -- LOGHI -- */
+ .loghi-container{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: auto;
+   align-items: center;
+   justify-items: center;
+ }
+ .logo-box {
+display: grid;
+align-items: center;
+justify-items: center;
+ }
+
+  /* eyes animation */
+  .logo-container:hover .left-eye,
+  .logo-container:hover .right-eye {
+    transform-origin: center 60%;
+    animation-name: eyes;
+    animation-duration: 350ms;
+    animation-iteration-count: 1;
+  }
+  
+  @keyframes eyes {
+  
+    0%,
+    100% {
+      transform: scaleY(1);
+    }
+  
+    50% {
+      transform: scaleY(0.1);
+    }
+  }
+  
+  /* logo desktop */
+  .desktop-logo {
+    width: 160px;
+  }
+  
+  /* logo mobile */
+  .mobile-logo {
+    width: 32px;
+  }
+  /* logo footer */
+  .logo-bcg-dark {
+background-color: rgb(0, 0, 0);
+  }
+  /* -- ICONS -- */
+  /* contenitore delle icone */
+  .box-icone-generale {
+    padding: 2rem;
+    border: 1px solid rgb(40, 13, 95);
+    background-color: white;
+    margin-top: 2rem;
+  }
+  .box-icone{
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: auto;
+   align-items: center;
+   justify-items: center;
+  }
+  .gear {
+    fill: rgb(122, 110, 170);
+  }
+  
+  .language {
+    fill: rgb(122, 110, 170);
+  }
+  
+  .lottery {
+    fill: white;
+    background-color: gray;
+    margin-bottom: 1rem;
+  }
+  
+  .users {
+    fill: rgb(118, 69, 217);
+  }
+  
+  .trades {
+    fill: rgb(31, 199, 212);
+  }
+  
+  .staked {
+    fill: rgb(237, 75, 158);
+  }
+  
+  .twitter {
+    fill: rgb(184, 173, 210);
+  }
+  
+  .telegram {
+    fill: rgb(184, 173, 210);
+    cursor: pointer;
+  }
+  
+  .reddit {
+    fill: rgb(184, 173, 210);
+    cursor: pointer;
+  }
+  
+  .instagram {
+    fill: rgb(184, 173, 210);
+    cursor: pointer;
+  }
+  
+  .github {
+    fill: rgb(184, 173, 210);
+    cursor: pointer;
+  }
+  .tempo {
+    fill: rgb(122, 110, 170);
+  }
+  
+  .discord {
+    fill: rgb(184, 173, 210);
+    cursor: pointer;
+  }
+  .icona-svg-freccia-switch {
+     fill: rgb(122, 110, 170);
+     cursor: pointer;
+ }
+ .icona-circle-gialla {
+  fill: rgb(40, 13, 95);
+ }
+ .icona-frecce-orizz {
+ fill: rgb(31, 199, 212);
+ cursor: pointer;
+ }
+ .icona-freccia-ridim {
+  fill: rgb(40, 13, 95);
+  cursor: pointer;
+ }
+ .icon-basic-svg {
+  fill: rgb(31, 199, 212);
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+.icon-trading-svg {
+  fill: rgb(31, 199, 212);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.icona-freccia-piena-verso-basso{
+  fill: rgb(40, 13, 95);
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+.icona-freccia-verso-basso {
+  fill: rgb(31, 199, 212);
+width: 16px;
+height: 16px;
+}
+.icona-freccia-details {
+  transform: rotate(0deg);
+  height: 20px;
+  fill: rgb(31, 199, 212);
+  width: 20px;
+}
+.icona-coniglio-card {
+  fill: rgb(40, 13, 95);
+  cursor: pointer;
+}
+@media screen and (min-width: 968px){
+.icona-nometa-con-media{
+  height: 64px;
+    width: 64px;
+    fill: rgb(40, 13, 95);
+}
+}
+.icona-nometa {
+  fill: rgb(40, 13, 95);
+}
+@media screen and (min-width: 968px) {
+.icona-sveglia-con-media {
+  height: 64px;
+    width: 64px;
+    fill: rgb(40, 13, 95);
+}
+}
+.icona-sveglia {
+  fill: rgb(40, 13, 95);
+}
+.question {
+  fill: white;
+  cursor: pointer;
+}
+.coppa {
+  fill: white;
+  cursor: pointer;
+}
+.play{
+  fill: rgb(118, 69, 217);
+}
+.icona-freccia-sx {
+  fill: rgb(31, 199, 212);
+}
+.icona-freccia-dx{
+  fill: rgb(31, 199, 212);
+}
+.icona-grafico {
+  fill: rgb(40, 13, 95);
+}
