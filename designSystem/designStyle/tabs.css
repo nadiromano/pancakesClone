@@ -5,7 +5,7 @@
     grid-template-rows: auto;
     justify-items:center;
     align-items: center;
-    gap: 10px;
+    gap: 50px;
 }
 .tab-box {
     display: grid;
@@ -361,10 +361,4 @@ padding: 0px;
     background-color: transparent;
     color: rgb(31, 199, 212);
     box-shadow: none;
-}
-.tab-box-img-cards-coniglio {
--cursor: pointer;
-left: 50%;
-margin-left: -32px;
-position: absolute;
 }
