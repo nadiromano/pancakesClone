@@ -5,7 +5,7 @@
 @import url(designSystem/designStyle/buttons.css);
 @import url(designSystem/designStyle/tabs.css);
 @import url(designSystem/designStyle/logo-icone.css);
-
+@import url(src/styles/earn.css);
 *::after,
 *::before {
   padding: 0;
