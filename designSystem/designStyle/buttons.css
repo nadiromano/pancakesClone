@@ -16,9 +16,9 @@
   font-family: "Kanit";
 }
 
-main {
+/* main {
   padding: 2rem;
-}
+} */
 
 .button-Style--title {
   font-family: sans-serif;
@@ -47,15 +47,23 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 10px;/* Aggiunto da Sara momentaneamente*/
 }
 
 .text {
-  display: flex;
+  /* display: flex;
   font-size: var(--font-size);
   margin-right: 1rem;
   flex-direction: column;
   justify-content: center;
   text-transform: uppercase;
+} */
+font-family: sans-serif;
+font-size: 18px;
+text-transform: uppercase;
+margin-top: 50px;
+margin-left: 20px;
+margin-bottom: 35px;
 }
 /* contenitori singoli delle varie tipologie dei bottoni */
 
