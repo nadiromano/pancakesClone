@@ -1,0 +1,139 @@
+.footer {
+  width: 100vw;
+  background-color: var(--bg-color-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer__container {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.5rem;
+}
+
+.footer__box {
+  color: white;
+}
+
+.footer__box li {
+  margin-bottom: 8px;
+}
+
+.footer__nav-title {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.footer__nav-item {
+  color: rgb(244, 238, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.footer__nav-item--accent {
+  color: var(--accent-color);
+}
+
+.footer__logo {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__logo-img {
+  margin-right: 3px;
+}
+
+.footer__social {
+  margin-top: 3rem;
+  padding-bottom: 1.5rem;
+  align-self: flex-start;
+  width: 75%;
+  margin-left: 12.5%;
+  border-bottom: 1px solid rgb(56, 50, 65);
+  display: flex;
+  gap: 20px;
+}
+
+.footer__social img {
+  width: 20px;
+}
+
+.footer__option-container {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.footer__option-sx {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.footer__option-lang {
+  display: flex;
+  align-items: center;
+}
+
+.footer__option-lang img {
+  width: 30px;
+  transform: translateY(15%);
+}
+
+.footer__option-lang__text {
+  color: var(--subtle-color);
+  font-size: 15px;
+  margin-left: 10px;
+}
+.footer__option-dx {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.footer__option-dx img {
+  transform: translateY(15%);
+}
+
+.footer__option-value {
+  color: var(--subtle-color);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-left: -10px;
+}
+
+.input-switch__selected--active {
+  left: 27px;
+}
+
+.footerBtn {
+  background-color: var(--secundary-color);
+  padding: 0.2rem 1.3rem;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  align-items: baseline;
+}
+
+.arrow {
+  margin-left: 5px;
+  transform: translate(5px);
+}
+
+.footerBtn:hover {
+  opacity: 0.65;
+}

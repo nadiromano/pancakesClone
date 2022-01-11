@@ -6,10 +6,72 @@
 @import url(designSystem/designStyle/tabs.css);
 @import url(designSystem/designStyle/logo-icone.css);
 @import url(src/styles/earn.css);
+@import url(src/styles/footer.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary-color: rgb(118, 69, 217);
+  --secundary-color: rgb(31, 199, 212);
+  --terciary-color: rgb(237, 75, 158);
+  --accent-color: rgb(255, 178, 55);
+  --succes-color: rgb(49, 208, 170);
+  --succes-color--hover: rgba(49, 208, 170, 0.65);
+
+  --bg-color--grad: linear-gradient(
+    rgb(255, 255, 255) 22%,
+    rgb(215, 202, 236) 100%
+  );
+
+  --bg-color--grad-block: linear-gradient(
+    139.73deg,
+    rgb(230, 253, 255) 0%,
+    rgb(243, 239, 255) 100%
+  );
+
+  --bg-color--grad-light: linear-gradient(
+    111.68deg,
+    rgb(242, 236, 242) 0%,
+    rgb(232, 242, 246) 100%
+  );
+
+  --bg-color--grad-blue: linear-gradient(
+    rgb(111, 182, 241) 0%,
+    rgb(234, 242, 246) 100%
+  );
+
+  --bg-color--grad-violet: linear-gradient(
+    rgb(226, 201, 251) 0%,
+    rgb(205, 184, 250) 100%
+  );
+
+  --bg-color--grad-violet-dark: linear-gradient(
+    rgb(118, 69, 217) 0%,
+    rgb(81, 33, 177) 100%
+  );
+
+  --bg-color-light: rgb(250, 249, 250);
+  --bg-color-dark: rgb(39, 38, 44);
+  --h2-color: rgb(40, 13, 95);
+  --subtle-color: rgb(122, 110, 170);
+  --gray-color: rgb(231, 227, 235);
+}
+
 *,
 *::after,
 *::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+u,
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-family: 'kanit';
 }
