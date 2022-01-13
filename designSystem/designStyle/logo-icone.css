@@ -88,7 +88,7 @@ background-color: rgb(2, 2, 2);
   
   .lottery {
     fill: white;
-    background-color: gray;
+    background-color: gray;/* trasparent*/
     margin-bottom: 1rem;
   }
   
