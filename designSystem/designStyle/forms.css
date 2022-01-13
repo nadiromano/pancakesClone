@@ -71,7 +71,7 @@
   min-width: 150px;
   height: 40px;
   display: flex;
-
+  cursor: pointer;
   align-items: center;
 
   justify-content: space-between;
@@ -118,6 +118,10 @@
 .input-sort__cascade__content {
   list-style: none;
   padding: 10px 16px;
+}
+
+.input-sort__cascade__item {
+  cursor: pointer;
 }
 
 .input-sort__cascade__item:not(:last-child) {

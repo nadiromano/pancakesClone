@@ -14,6 +14,11 @@
   border-radius: 3px 3px 0 0;
 }
 
+.earn-v {
+  background-color: transparent;
+  gap: 5px;
+}
+
 .earn__header {
   background: var(--bg-color--grad-block);
 }
@@ -67,6 +72,8 @@
   display: flex;
   gap: 8px;
   align-items: center;
+  align-self: flex-start;
+  transform: translateY(55%);
 }
 
 .earn__filters-icon1,
@@ -106,10 +113,36 @@
 }
 
 .earn__to-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .earn__to-top-btn {
+  /* margin-bottom: 1rem; */
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1;
+  height: 60px;
+  padding: 0 24px;
+  color: var(--secundary-color);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .earn__to-top-svg {
+  fill: var(--secundary-color);
+}
+
+.earn__imgDecorator {
+  display: flex;
+  justify-content: center;
+}
+
+.earn__imgDecorator img {
+  margin-top: 2.5rem;
 }

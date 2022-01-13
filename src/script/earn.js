@@ -1,14 +1,19 @@
 const URL = 'https://tokens.pancakeswap.finance/pancakeswap-top-100.json';
-let tBody = document.querySelector('.earn__table-table-body');
-
+const tBody = document.querySelector('.earn__table-table-body');
+const toTopBtn = document.querySelector('.earn__to-top-btn');
+const earnTable = document.querySelector('#earn-table');
+const sortBtn = document.querySelector('.input-sort__box');
+const sortCascade = document.querySelector('.input-sort__cascade');
+const sortCascadeItem = document.querySelectorAll('.input-sort__cascade__item');
+const earnOnOffBtn = document.querySelector('.input__on-of');
+const earnOnOffToggle = document.querySelector('.input__on-of-toggle');
+// get and display currency
 const getCurr = async function () {
   try {
     const res = await fetch(URL);
     const data = await res.json();
 
-    console.log(res, data);
     const currBtc = data.tokens;
-    console.log(currBtc);
     //rendering
     const markup = currBtc
       .map((curr) => {
@@ -231,8 +236,47 @@ const getCurr = async function () {
 
 getCurr();
 
-let test = {
-  img: 'banana',
-};
+// go to top
 
-console.log(test.kaaa || 'cipolla');
+toTopBtn.addEventListener('click', function () {
+  earnTable.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+
+// open sort box (cercare di utilizzare il bubbleling)
+function sortNoVisible() {
+  sortBtn.style.borderRadius = '16px';
+  sortCascade.classList.add('novisible');
+}
+
+sortBtn.addEventListener('click', function () {
+  if (sortCascade.classList.contains('novisible')) {
+    sortBtn.style.borderRadius = '16px 16px 0 0';
+    sortCascade.classList.remove('novisible');
+  } else {
+    sortNoVisible();
+    sortCascadeItem.forEach((e) =>
+      e.addEventListener('click', function () {
+        sortNoVisible();
+      })
+    );
+  }
+});
+
+sortCascadeItem.forEach((e) =>
+  e.addEventListener('click', function () {
+    sortCascade.classList.add('novisible');
+  })
+);
+
+//on-off switch
+earnOnOffBtn.addEventListener('click', function (e) {
+  if (!earnOnOffBtn.classList.contains('toggle-active')) {
+    earnOnOffBtn.style.backgroundColor = 'var(--succes-color)';
+    earnOnOffToggle.style.left = '17px';
+    earnOnOffBtn.classList.add('toggle-active');
+  } else {
+    earnOnOffBtn.style.backgroundColor = 'rgb(238, 234, 244)';
+    earnOnOffToggle.style.left = '0px';
+    earnOnOffBtn.classList.remove('toggle-active');
+  }
+});
