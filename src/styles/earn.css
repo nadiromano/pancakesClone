@@ -60,8 +60,56 @@
   margin-right: auto;
   margin-left: auto;
   align-items: center;
+  margin-top: 4rem;
 }
 
 .earn__filters-left {
   display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.earn__filters-icon1,
+.earn__filters-icon2 {
+  transform: translateY(3px);
+}
+
+.earn__filters-icon2 {
+  margin-right: 15px;
+}
+
+.input__on-of-text {
+  color: var(--h2-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-right: 8px;
+}
+
+.earn__tab-box {
+}
+
+.earn__tab-box-btn-active {
+  padding: 0 13px;
+}
+
+.earn__tab-box-btn {
+  padding: 0 7px;
+}
+
+.earn__filters-right {
+}
+
+.earn__content {
+  max-width: 1200px;
+  margin: 4rem auto;
+}
+
+.earn__to-top {
+}
+
+.earn__to-top-btn {
+}
+
+.earn__to-top-svg {
 }

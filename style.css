@@ -75,3 +75,7 @@ a {
 html {
   font-family: 'kanit';
 }
+
+.novisible {
+  display: none;
+}

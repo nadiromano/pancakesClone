@@ -2066,6 +2066,8 @@ tbody {
   width: 82%;
   inset: auto 0px 5px auto;
   z-index: 6;
+  background-color: whitesmoke;
+  border-radius: 50%;
 }
 
 .earn__table-table-row__cont-el__title-icons::before {
