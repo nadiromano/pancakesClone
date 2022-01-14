@@ -6,6 +6,8 @@ const switchContainer = document.querySelector('.input-switch__container');
 
 const footerValue = document.querySelector('.footer__option-value');
 
+const footerIcon = document.querySelector('.pancakes').firstElementChild;
+
 switchDarkBtn.addEventListener('click', function (e) {
   if (!switchDarkBtn.classList.contains('input-switch__selected--active')) {
     switchDarkBtn.classList.add('input-switch__selected--active');

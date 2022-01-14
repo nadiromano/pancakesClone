@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
+    <script src="../main.js" defer></script>
     <script src="script/earn.js" defer></script>
     <title>Earn</title>
   </head>
@@ -13,7 +14,7 @@
       <div class="ear__toogle-container">
         <div class="tab-box">
           <div class="tab-wrap-page-exchange-liquidity earn-v">
-            <a href="" class="tab-page-active tab-farm">Farms</a>
+            <a href="" class="tab-page tab-page-active tab-farm">Farms</a>
             <a href="" class="tab-page tab-pool">Pools</a>
           </div>
         </div>
@@ -49,11 +50,14 @@
           <div class="earn__filters-tab">
             <div class="tab-version-box earn__tab-box">
               <button
-                class="tab-button-v2-active earn__tab-box-btn earn__tab-box-btn-active"
+                class="tab-button-v1 earn__tab-box-btn earn__tab-box-btn-active"
+                id="earn-v1"
               >
                 Live
               </button>
-              <button class="tab-button-v1 earn__tab-box-btn">Finisched</button>
+              <button class="tab-button-v1 earn__tab-box-btn" id="earn-v2">
+                Finisched
+              </button>
             </div>
           </div>
         </div>
@@ -117,7 +121,7 @@
             <div class="earn__table-wrapper">
               <table class="earn__table-table" id="earn-table">
                 <tbody class="earn__table-table-body">
-                  <tr class="earn__table-table-row">
+                  <!-- <tr class="earn__table-table-row">
                     <td>
                       <div class="earn__table-table-row__cont-box">
                         <div>
@@ -323,7 +327,7 @@
                         </div>
                       </div>
                     </td>
-                  </tr>
+                  </tr> -->
                 </tbody>
               </table>
             </div>
@@ -449,16 +453,16 @@
                 />
                 <div class="input-switch__states">
                   <div class="input-switch__item--off">
-                    <img src="Assets1/sun-gray.svg" alt="" />
+                    <img src="../Assets1/sun-gray.svg" alt="" />
                   </div>
                   <div class="input-switch__item--on">
-                    <img src="Assets1/moon.svg" class="moonIcon" alt="" />
+                    <img src="../Assets1/moon.svg" class="moonIcon" alt="" />
                   </div>
                 </div>
               </div>
               <div class="input-switch__selected">
                 <div class="input-switch__item--selected">
-                  <img class="svgSun" src="Assets1/sun.svg" alt="" />
+                  <img class="svgSun" src="../Assets1/sun.svg" alt="" />
                 </div>
               </div>
             </div>

@@ -7,11 +7,18 @@ const sortCascade = document.querySelector('.input-sort__cascade');
 const sortCascadeItem = document.querySelectorAll('.input-sort__cascade__item');
 const earnOnOffBtn = document.querySelector('.input__on-of');
 const earnOnOffToggle = document.querySelector('.input__on-of-toggle');
+const earnTableCont = document.querySelector('#farms-table');
+const earnLive = document.querySelector('.earn__tab-box');
+const earnLiveV1 = document.querySelector('#earn-v1');
+const earnLiveV2 = document.querySelector('#earn-v2');
+const earnNav = document.querySelector('.earn-v');
+
 // get and display currency
 const getCurr = async function () {
   try {
     const res = await fetch(URL);
     const data = await res.json();
+    earnTableCont.style.display = 'none';
 
     const currBtc = data.tokens;
     //rendering
@@ -227,8 +234,8 @@ const getCurr = async function () {
       })
       .join('');
 
-    tBody.innerHTML = '';
     tBody.insertAdjacentHTML('beforeend', markup);
+    earnTableCont.style.display = 'block';
   } catch (err) {
     throw err;
   }
@@ -279,4 +286,21 @@ earnOnOffBtn.addEventListener('click', function (e) {
     earnOnOffToggle.style.left = '0px';
     earnOnOffBtn.classList.remove('toggle-active');
   }
+});
+
+//live switch
+earnLive.addEventListener('click', function (e) {
+  earnLive
+    .querySelectorAll('.earn__tab-box-btn')
+    .forEach((el) => el.classList.remove('earn__tab-box-btn-active'));
+  e.target.classList.toggle('earn__tab-box-btn-active');
+});
+
+//nav switch
+earnNav.addEventListener('click', function (e) {
+  e.preventDefault();
+  earnNav
+    .querySelectorAll('.tab-page')
+    .forEach((el) => el.classList.remove('tab-page-active'));
+  e.target.classList.toggle('tab-page-active');
 });

@@ -98,6 +98,8 @@
 
 .earn__tab-box-btn-active {
   padding: 0 13px;
+  background-color: var(--subtle-color);
+  color: whitesmoke;
 }
 
 .earn__tab-box-btn {
@@ -145,4 +147,8 @@
 
 .earn__imgDecorator img {
   margin-top: 2.5rem;
+}
+
+.earn__table-table-row__cont-el__title-icons-img {
+  border-radius: 50%;
 }
