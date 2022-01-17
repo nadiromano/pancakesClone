@@ -82,6 +82,7 @@
   border-radius: 16px 16px 16px 16px;
   background: rgb(238, 234, 244);
   transition: border-radius 0.15s ease 0s;
+  position: relative;
 }
 
 .input-sort__first-content {
@@ -113,6 +114,9 @@
   border-radius: 0px 0px 16px 16px;
   box-shadow: rgb(0 0 0 / 20%) 0px 0px 2px,
     rgb(14 14 44 / 10%) 0px 4px 12px -8px;
+  position: absolute;
+  min-width: 150px;
+  z-index: 500000;
 }
 
 .input-sort__cascade__content {

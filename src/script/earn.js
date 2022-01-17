@@ -13,16 +13,44 @@ const earnLiveV1 = document.querySelector('#earn-v1');
 const earnLiveV2 = document.querySelector('#earn-v2');
 const earnNav = document.querySelector('.earn-v');
 
-// get and display currency
-const getCurr = async function () {
-  try {
-    const res = await fetch(URL);
-    const data = await res.json();
-    earnTableCont.style.display = 'none';
+const fetchData = async function () {
+  const res = await fetch(URL);
+  const data = await res.json();
+  return data;
+};
 
-    const currBtc = data.tokens;
+const currBtc = async function () {
+  const data = await fetchData();
+
+  const dataArr = await data.tokens;
+  return dataArr;
+};
+
+const currBtcArr = currBtc();
+
+const stakedBtc = async function () {
+  const data = await fetchData();
+
+  const dataArr = await data.tokens.filter((curr) => curr.decimals < 18);
+  return dataArr;
+};
+const stakedBtcArr = stakedBtc();
+
+const liveBtc = async function () {
+  const data = await fetchData();
+  const dataArr = await data.tokens.filter((curr) => curr.decimals < 16);
+  return dataArr;
+};
+const liveBtcArr = liveBtc();
+
+// get and display currency
+const getCurr = async function (arr) {
+  try {
+    earnTableCont.style.display = 'none';
+    data = await arr;
+
     //rendering
-    const markup = currBtc
+    const markup = data
       .map((curr) => {
         return `<tr class="earn__table-table-row">
         <td>
@@ -241,7 +269,7 @@ const getCurr = async function () {
   }
 };
 
-getCurr();
+getCurr(currBtcArr);
 
 // go to top
 
@@ -255,23 +283,33 @@ function sortNoVisible() {
   sortCascade.classList.add('novisible');
 }
 
-sortBtn.addEventListener('click', function () {
+// sortBtn.addEventListener('click', function () {
+//   if (sortCascade.classList.contains('novisible')) {
+//     sortBtn.style.borderRadius = '16px 16px 0 0';
+//     sortCascade.classList.remove('novisible');
+//   } else {
+//     sortNoVisible();
+//     sortCascadeItem.forEach((e) =>
+//       e.addEventListener('click', function () {
+//         sortNoVisible();
+//       })
+//     );
+//   }
+// });
+
+sortBtn.addEventListener('click', function (e) {
+  sortCascade.classList.toggle('novisible');
   if (sortCascade.classList.contains('novisible')) {
-    sortBtn.style.borderRadius = '16px 16px 0 0';
-    sortCascade.classList.remove('novisible');
+    sortBtn.style.borderRadius = '16px';
   } else {
-    sortNoVisible();
-    sortCascadeItem.forEach((e) =>
-      e.addEventListener('click', function () {
-        sortNoVisible();
-      })
-    );
+    sortBtn.style.borderRadius = '16px 16px 0 0';
   }
 });
 
 sortCascadeItem.forEach((e) =>
   e.addEventListener('click', function () {
     sortCascade.classList.add('novisible');
+    sortBtn.style.borderRadius = '16px';
   })
 );
 
@@ -281,19 +319,31 @@ earnOnOffBtn.addEventListener('click', function (e) {
     earnOnOffBtn.style.backgroundColor = 'var(--succes-color)';
     earnOnOffToggle.style.left = '17px';
     earnOnOffBtn.classList.add('toggle-active');
+    tBody.innerHTML = '';
+    getCurr(stakedBtcArr);
   } else {
     earnOnOffBtn.style.backgroundColor = 'rgb(238, 234, 244)';
     earnOnOffToggle.style.left = '0px';
     earnOnOffBtn.classList.remove('toggle-active');
+    tBody.innerHTML = '';
+    getCurr(currBtcArr);
   }
 });
 
-//live switch
+//live switch provare a fare il toggle ad entrambi gli elementi
 earnLive.addEventListener('click', function (e) {
   earnLive
     .querySelectorAll('.earn__tab-box-btn')
     .forEach((el) => el.classList.remove('earn__tab-box-btn-active'));
   e.target.classList.toggle('earn__tab-box-btn-active');
+  if (e.target.innerText === 'Live') {
+    tBody.innerHTML = '';
+    getCurr(currBtcArr);
+  } else {
+    tBody.innerHTML = '';
+    getCurr(liveBtcArr);
+  }
+  console.log(e.target.textContent);
 });
 
 //nav switch
