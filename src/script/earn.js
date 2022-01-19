@@ -4,6 +4,7 @@ const toTopBtn = document.querySelector('.earn__to-top-btn');
 const earnTable = document.querySelector('#earn-table');
 const sortBtn = document.querySelector('.input-sort__box');
 const sortCascade = document.querySelector('.input-sort__cascade');
+const sortLabel = document.getElementById('sort-label');
 const sortCascadeItem = document.querySelectorAll('.input-sort__cascade__item');
 const earnOnOffBtn = document.querySelector('.input__on-of');
 const earnOnOffToggle = document.querySelector('.input__on-of-toggle');
@@ -12,6 +13,12 @@ const earnLive = document.querySelector('.earn__tab-box');
 const earnLiveV1 = document.querySelector('#earn-v1');
 const earnLiveV2 = document.querySelector('#earn-v2');
 const earnNav = document.querySelector('.earn-v');
+const rawCurr = document.querySelectorAll(
+  '.earn__table-table-row__cont-el__cash-text-value'
+);
+const searchInput = document.querySelector('.input-search__input');
+
+// fetch datas
 
 const fetchData = async function () {
   const res = await fetch(URL);
@@ -47,10 +54,22 @@ const liveBtcArr = liveBtc();
 const getCurr = async function (arr) {
   try {
     earnTableCont.style.display = 'none';
-    data = await arr;
+    let data = await arr;
+    let ranNum = Math.floor(Math.random() * (1000000 - 1000) + 1000);
+
+    let curr = data.map(
+      (i) =>
+        (i = {
+          symbol: i.symbol,
+          logo: i.logoURI,
+          decimals: i.decimals,
+          value: Math.floor(Math.random() * (1000000 - 1000) + 1000),
+          multiplier: Math.floor(Math.random() * (40 - 0) + 0),
+        })
+    );
 
     //rendering
-    const markup = data
+    const markup = curr
       .map((curr) => {
         return `<tr class="earn__table-table-row">
         <td>
@@ -68,7 +87,7 @@ const getCurr = async function (arr) {
                         class="earn__table-table-row__cont-el__title-icons-icon earn__table-table-row__cont-el__title-icon-container earn__table-table-row__cont-el__title-icons earn__table-table-row__cont-el__title-icon-main"
                       >
                         <img
-                          src="${curr.logoURI}"
+                          src="${curr.logo}"
                           class="earn__table-table-row__cont-el__title-icons-img" onerror="this.src = 'https://pancakeswap.finance/images/tokens/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82.svg';" 
                         />
                       </div>
@@ -177,7 +196,7 @@ const getCurr = async function (arr) {
                       color="text"
                       class="earn__table-table-row__cont-el__cash-text-value"
                     >
-                      $${Math.floor(Math.random() * (1000000 - 1000) + 1000)}
+                      $${curr.value}
                     </div>
                   </div>
                   <div
@@ -213,7 +232,7 @@ const getCurr = async function (arr) {
                   <div
                     class="earn__table-table-row__cont-el__multiplier-text"
                   >
-                  ${Math.floor(Math.random() * (40 - 0) + 0) + 'x'}
+                  ${curr.multiplier + 'x'}
                   </div>
                   <div
                     class="earn__table-table-row__cont-el__multiplier-icon"
@@ -265,7 +284,7 @@ const getCurr = async function (arr) {
     tBody.insertAdjacentHTML('beforeend', markup);
     earnTableCont.style.display = 'block';
   } catch (err) {
-    throw err;
+    throw err.message;
   }
 };
 
@@ -278,24 +297,6 @@ toTopBtn.addEventListener('click', function () {
 });
 
 // open sort box (cercare di utilizzare il bubbleling)
-function sortNoVisible() {
-  sortBtn.style.borderRadius = '16px';
-  sortCascade.classList.add('novisible');
-}
-
-// sortBtn.addEventListener('click', function () {
-//   if (sortCascade.classList.contains('novisible')) {
-//     sortBtn.style.borderRadius = '16px 16px 0 0';
-//     sortCascade.classList.remove('novisible');
-//   } else {
-//     sortNoVisible();
-//     sortCascadeItem.forEach((e) =>
-//       e.addEventListener('click', function () {
-//         sortNoVisible();
-//       })
-//     );
-//   }
-// });
 
 sortBtn.addEventListener('click', function (e) {
   sortCascade.classList.toggle('novisible');
@@ -309,7 +310,10 @@ sortBtn.addEventListener('click', function (e) {
 sortCascadeItem.forEach((e) =>
   e.addEventListener('click', function () {
     sortCascade.classList.add('novisible');
+    let label = sortLabel.textContent;
     sortBtn.style.borderRadius = '16px';
+    sortLabel.textContent = e.textContent;
+    e.textContent = label;
   })
 );
 
@@ -354,3 +358,54 @@ earnNav.addEventListener('click', function (e) {
     .forEach((el) => el.classList.remove('tab-page-active'));
   e.target.classList.toggle('tab-page-active');
 });
+
+// sort
+
+// rawCurr.sort((a, b) => {
+//   if (a.value > b.value) {
+//     return 1;
+//   }
+//   if (a.value < b.value) {
+//     return -1;
+//   }
+//   return 0;
+// });
+
+// search
+const loadSearchResults = async function (query) {
+  try {
+    const data = await fetchData();
+
+    loadData = data.tokens;
+
+    loadData.forEach((el) => {
+      el.name.toLowerCase();
+      el.symbol.toLowerCase();
+    });
+
+    const filtered = loadData.filter(
+      (el) => el.name.includes(query) || el.symbol.includes(query)
+    );
+
+    return filtered;
+  } catch (err) {
+    throw err;
+  }
+};
+
+searchInput.addEventListener(
+  'input',
+  async function (e) {
+    let filter = searchInput.value;
+    let curr = await loadSearchResults(filter);
+
+    curr.forEach((el) => {
+      el.symbol.toUpperCase();
+    });
+    console.log(curr);
+
+    tBody.innerHTML = '';
+    getCurr(curr);
+  },
+  false
+);
