@@ -8,6 +8,7 @@
   <title>Home page Pancake</title>
   <link rel="stylesheet" href="style.css" />
   <script src="main.js" defer></script>
+  <script src="home.js" defer></script>
 </head>
 
 <body>
@@ -17,47 +18,47 @@
   <!--Main-->
   <main class="home">
     <div class="home-container-principale">
-<div class="home.container-prima-e-seconda-sez">
-      <div class="home-section home-section1">
-        <div class="home-subcontainer-section home-subcontainer-section1">
-          <div class="home-container-text-section home-container-text-section1">
-            <h2 class="home-title home-title-section1">Soon</h2>
-            <h1 class="home-subtitle home-subtitle-section1">Froyo IFO</h1>
+      <div class="home.container-prima-e-seconda-sez">
+        <div class="home-section home-section1">
+          <div class="home-subcontainer-section home-subcontainer-section1">
+            <div class="home-container-text-section home-container-text-section1">
+              <h2 class="home-title home-title-section1">Soon</h2>
+              <h1 class="home-subtitle home-subtitle-section1">Froyo IFO</h1>
+              <a href="#" class="home-page-ifo">
+                <button class="buttonStandard buttonHover buttonActive">Go to IFO
+                    <img src="Assets1/freccia-dx.svg"class="icona-freccia-dx home-freccia-img" />
+                </button></a>
+            </div>
+            <div class="home-container-img home-container-img-section1">
+              <img src="Assets1/img homepage/3d-ifo-froyo.png" class="home-img-froyo">
+            </div>
+          </div>
+        </div>
+      
+      <div class="home-section home-section2">
+        <div class="home-subcontainer-section home-subcontainer-section2">
+          <div class="home-container-text-section home-container-text-section2">
+            <h1 class="home-title home-title-section2">The moon is made of pancakes</h1>
+            <h4 class="home-subtitle home-subtitle-section2">Trade, earn, and win crypto on the most popular decentralized platform in the
+              galaxy.</h4>
+          
+          <div class="home-container-buttons-section home-container-buttons-section2">
+            <button class="buttonStandard buttonHover buttonActive home-button-wallet-sec2">Connect Wallet</button>
             <a href="#" class="home-page-ifo">
-              <button class="buttonStandard buttonHover buttonActive">Go to IFO
-                  <img src="Assets1/freccia-dx.svg"class="icona-freccia-dx home-freccia-img" />
-              </button></a>
-          </div>
-          <div class="home-container-img home-container-img-section1">
-            <img src="Assets1/img homepage/3d-ifo-froyo.png" class="home-img-froyo">
+              <button class="buttonMedium buttonHover home-button-trade-sec2">Trade Now</button>
+            </a>
           </div>
         </div>
-      </div>
-    
-    <div class="home-section home-section2">
-      <div class="home-subcontainer-section home-subcontainer-section2">
-        <div class="home-container-text-section home-container-text-section2">
-          <h1 class="home-title home-title-section2">The moon is made of pancakes</h1>
-          <h4 class="home-subtitle home-subtitle-section2">Trade, earn, and win crypto on the most popular decentralized platform in the
-            galaxy.</h4>
-        
-        <div class="home-container-buttons-section home-container-buttons-section2">
-          <button class="buttonStandard buttonHover buttonActive home-button-wallet-sec2">Connect Wallet</button>
-          <a href="#" class="home-page-ifo">
-            <button class="buttonMedium buttonHover home-button-trade-sec2">Trade Now</button>
-          </a>
+          <div class="home-container-img home-container-images-section2">
+            <img src="Assets1/img homepage/bunny-dinamico-home.webp" class="home-img-bummy-dimamico">
+            <img src="Assets1/img homepage/sfondo1-bunny-dinamico-home.webp" class="home-sfondo-bunny-1">
+            <img src="Assets1/img homepage/sfondo2-bunny-dinamico-home.webp" class="home-sfondo-bunny-2">
+            <img src="Assets1/img homepage/sfondo3-bunny-dinamico-home.webp" class="home-sfondo-bunny-3">
+  
+          </div>
         </div>
       </div>
-        <div class="home-container-img home-container-images-section2">
-          <img src="Assets1/img homepage/bunny-dinamico-home.webp" class="home-img-bummy-dimamico">
-          <img src="Assets1/img homepage/sfondo1-bunny-dinamico-home.webp" class="home-sfondo-bunny-1">
-          <img src="Assets1/img homepage/sfondo2-bunny-dinamico-home.webp" class="home-sfondo-bunny-2">
-          <img src="Assets1/img homepage/sfondo3-bunny-dinamico-home.webp" class="home-sfondo-bunny-3">
-
-        </div>
-      </div>
-    </div>
-</div>
+  </div>
     <div class="home-section home-section3">
       <div class="home-subcontainer-section home-subcontainer-section3">
         <img src="Assets1/bunny.svg" class ="home-icon-bunny">
@@ -163,9 +164,9 @@
         <div class="tab-box-top-farm-syrup-pools">
           <!--da implementare con js-->
           <h2 class="tab-scritta-top">Top
-            <span class="tab-scritta-switch-farm tab-scritta-switch"> Farms </span>
-            <span class="tab-scritta-switch-syrup-pools tab-scritta-switch">Syrup Pools </span>
-            <button class="tab-button-switch-farm-syrup-pools">
+            <span id="farms" class="tab-scritta-switch-farm tab-scritta-switch"> Farms </span>
+            <span id="pools" class="tab-scritta-switch-syrup-pools tab-scritta-switch">Syrup Pools </span>
+            <button id="button-switch"class="tab-button-switch-farm-syrup-pools">
               <img src="Assets1/freccia-switch-farms-tab.svg" class="icona-svg-freccia-switch">
             </button>
           </h2>

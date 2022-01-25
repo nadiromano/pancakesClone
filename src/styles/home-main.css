@@ -1,21 +1,9 @@
 img { 
     max-width: 100vh;
 }
-
-a{
-    color: inherit;
-    text-decoration: none;
-}
  .home-container-principale {
-    transition: margin-top 0.2s ease 0s, margin-left 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-    transform: translate3d(0px, 0px, 0px);
-    max-width: 100vw;
     margin-top: 127px;
  }
-    
- /* prima sezione*/
-
-
 
  .home.container-prima-e-seconda-sez{
     background: var(--bg-color--grad-block);
@@ -38,6 +26,7 @@ a{
 
 }
 .home-subcontainer-section1{
+  background: transparent;
     display: grid;
     width: 100vw;
     height: 230px;
@@ -65,7 +54,6 @@ width: 15em;
 justify-items: flex-start;
 }
 .home-title-section1{
-    fill: transparent;
     margin-bottom: 8px;
     color: rgb(235, 140, 0);
 }
@@ -73,7 +61,6 @@ justify-items: flex-start;
     color: rgb(255, 255, 255);
     text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
     margin-bottom: 16px;
-    -webkit-text-stroke: 6px transparent;
     font-weight: 600;
     line-height: 1.1;
 }
@@ -90,9 +77,6 @@ justify-items: flex-end;
 .home-img-froyo{
     height: 224px;
     width: 224px;
-}
-.home-freccia-img{
-    fill: white;
 }
 
 @media screen and (min-width: 968px){
@@ -298,6 +282,7 @@ justify-items: flex-start;
     }
   }
   
+  
 /* terza sezione */
   .home-section3{
     background-color: var(--bg-color--grad);
@@ -307,7 +292,6 @@ justify-items: flex-start;
 }
 .home-subcontainer-section3{
     display: grid;
-    z-index: 1;
     padding: 48px 0px;
     align-items: center;
     justify-items: center;
@@ -379,6 +363,7 @@ justify-items: flex-start;
         margin: 0px;
         width: 100vw;
         min-height: auto;
+        background: rgb(250, 249, 250);
      }
      /* .home-container-img-asimmetria-tra-section3-4{
         position: relative;
@@ -546,6 +531,7 @@ justify-items: flex-start;
         margin: 0px;
         width: 100vw;
         min-height: auto;
+        background: var( --bg-color--grad-light);
      }
      /* .home-container-img-asimmetria-tra-section3-4{
         position: relative;
@@ -704,6 +690,8 @@ justify-items: flex-start;
       }
       .home-subsection5-tab-tod-farms{
           display: grid;
+          max-height: 130px;
+          overflow: hidden;
       }
       .tab-box-top-farm-syrup-pools{
           display: grid;
@@ -728,17 +716,10 @@ justify-items: flex-start;
         display: none;
       }
 
-      @media screen and (min-width: 576px){
-      .home-container-text-switch-tab-farms{
-          height: 80px;
-      }
-    }
-
     .home-container-text-switch-tab-farms{
     display: grid;
     grid-template-columns: repeat(5, auto);
-    overflow: hidden;
-    max-height: 80px;
+    max-height: 250px;
     }
 
 
@@ -748,6 +729,7 @@ justify-items: flex-start;
     }
 }
 .home-container-section-text-tab-farms{
+  display: unset;
     top: 0px;
     opacity: 1;
     margin-top: 0px;
@@ -761,7 +743,6 @@ justify-items: flex-start;
 .home-container-section-text-tab-syrup-pools{
     top: 0px;
     opacity: 1;
-    margin-top: 50%;
     padding-right: 16px;
     height: 80px;
     top: 0px;
@@ -1098,6 +1079,7 @@ color: rgb(122, 110, 170);
         margin: 0px;
         width: 100vw;
         min-height: auto;
+        background: rgb(250, 249, 250);
      }
      /* .home-container-img-asimmetria-tra-section3-4{
         position: relative;
