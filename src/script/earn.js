@@ -17,6 +17,8 @@ const rawCurr = document.querySelectorAll(
   '.earn__table-table-row__cont-el__cash-text-value'
 );
 const searchInput = document.querySelector('.input-search__input');
+const toTopBtnCont = document.querySelector('.earn__to-top');
+toTopBtnCont.style.display = 'none';
 
 // fetch datas
 
@@ -67,6 +69,13 @@ const getCurr = async function (arr) {
           multiplier: Math.floor(Math.random() * (40 - 0) + 0),
         })
     );
+
+    console.log(curr.length);
+    if (curr.length > 10) {
+      toTopBtnCont.style.display = 'flex';
+    } else {
+      toTopBtnCont.style.display = 'none';
+    }
 
     //rendering
     const markup = curr
@@ -282,6 +291,7 @@ const getCurr = async function (arr) {
       .join('');
 
     tBody.insertAdjacentHTML('beforeend', markup);
+
     earnTableCont.style.display = 'block';
   } catch (err) {
     throw err.message;
@@ -347,7 +357,6 @@ earnLive.addEventListener('click', function (e) {
     tBody.innerHTML = '';
     getCurr(liveBtcArr);
   }
-  console.log(e.target.textContent);
 });
 
 //nav switch
@@ -402,7 +411,6 @@ searchInput.addEventListener(
     curr.forEach((el) => {
       el.symbol.toUpperCase();
     });
-    console.log(curr);
 
     tBody.innerHTML = '';
     getCurr(curr);
