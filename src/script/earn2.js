@@ -2,6 +2,7 @@ const URL = 'https://tokens.pancakeswap.finance/pancakeswap-top-100.json';
 const tBody = document.querySelector('.earn__table-table-body');
 const toTopBtn = document.querySelector('.earn__to-top-btn');
 const earnTable = document.querySelector('#earn-table');
+const sortParent = document.querySelector('.input-sort__wrapper');
 const sortBtn = document.querySelector('.input-sort__box');
 const sortCascade = document.querySelector('.input-sort__cascade');
 const sortLabel = document.getElementById('sort-label');
@@ -48,6 +49,7 @@ const loadCurr = async function () {
           multiplier: Math.floor(Math.random() * (40 - 0) + 0),
         })
     );
+    state.curr.forEach((el) => (el.hot = el.value * el.multiplier));
   } catch (err) {
     console.log(err);
   }
@@ -60,6 +62,7 @@ const controlCurr = async function () {
 
     let { curr } = state;
     currView.initState(curr);
+    currView.sortFilter();
 
     currView.render();
   } catch (err) {
@@ -67,9 +70,58 @@ const controlCurr = async function () {
   }
 };
 
-const controlSearch = async function (e) {
+const controlSearch = function (e) {
   currView.query = searchInput.value.toLowerCase();
   console.log('evento', currView.query);
+  controlCurr();
+};
+
+const controlLive = function (e) {
+  earnLive
+    .querySelectorAll('.earn__tab-box-btn')
+    .forEach((el) => el.classList.remove('earn__tab-box-btn-active'));
+  e.target.classList.toggle('earn__tab-box-btn-active');
+  if (e.target.innerText === 'Live') {
+    currView.live = false;
+    controlCurr();
+  } else {
+    currView.live = true;
+    controlCurr();
+  }
+};
+
+const controlStacked = function (e) {
+  if (!earnOnOffBtn.classList.contains('toggle-active')) {
+    earnOnOffBtn.style.backgroundColor = 'var(--succes-color)';
+    earnOnOffToggle.style.left = '17px';
+    earnOnOffBtn.classList.add('toggle-active');
+    currView.stacked = true;
+    controlCurr();
+  } else {
+    earnOnOffBtn.style.backgroundColor = 'rgb(238, 234, 244)';
+    earnOnOffToggle.style.left = '0px';
+    earnOnOffBtn.classList.remove('toggle-active');
+    currView.stacked = false;
+    controlCurr();
+  }
+};
+
+const constrolSort = function (e) {
+  sortCascade.classList.toggle('novisible');
+  if (sortCascade.classList.contains('novisible')) {
+    sortBtn.style.borderRadius = '16px';
+  } else {
+    sortBtn.style.borderRadius = '16px 16px 0 0';
+  }
+};
+
+const constrolSortCascade = function (e) {
+  sortCascade.classList.add('novisible');
+  let label = sortLabel.textContent;
+  sortBtn.style.borderRadius = '16px';
+  sortLabel.textContent = e.target.textContent;
+  e.target.textContent = label;
+
   controlCurr();
 };
 
@@ -84,7 +136,10 @@ class TokensView {
   #parentElement = tBody;
   #data;
   query = '';
-  live = true;
+  live = false;
+  stacked = false;
+  sortOption = ['hot', 'apr', 'multiplier', 'earned', 'liquidity'];
+  sort = []; //array vuoto da riempire con input
 
   initState(data) {
     this.#data = data;
@@ -98,12 +153,43 @@ class TokensView {
 
   liveFilter() {
     if (!this.live) return;
-    this.#data = this.#data.filter((el) => el.decimals < 8);
+    this.#data = this.#data.filter((el) => el.decimals < 16);
+  }
+
+  sortFilter() {
+    this.sort = [];
+    this.sort.push(
+      document.querySelector('#sort-label').innerText.toLowerCase()
+    );
+
+    if (this.sort.includes('hot')) {
+      this.#data.sort((a, b) => b.hot - a.hot);
+    }
+    if (this.sort.includes('apr')) {
+      this.#data.sort((a, b) => b.decimals - a.decimals);
+    }
+    if (this.sort.includes('multiplier')) {
+      this.#data.sort((a, b) => b.multiplier - a.multiplier);
+    }
+    if (this.sort.includes('earned')) {
+      return;
+    }
+    if (this.sort.includes('liquidity')) {
+      this.#data.sort((a, b) => b.value - a.value);
+    }
+
+    console.log(this.#data, this.sort);
+  } //provare con template literal a cambiare dinamicamente il .qualcosa
+
+  stackedFilter() {
+    if (!this.stacked) return;
+    this.#data = this.#data.filter((el) => el.multiplier < 20);
   }
 
   filtered() {
     this.liveFilter();
     this.search();
+    this.stackedFilter();
   }
 
   render() {
@@ -124,6 +210,24 @@ class TokensView {
 
   addHandlerSearch(handler) {
     searchInput.addEventListener('input', handler);
+  }
+
+  addHandlerLive(handler) {
+    earnLive.addEventListener('click', handler);
+  }
+
+  addHandlerStacked(handler) {
+    earnOnOffBtn.addEventListener('click', handler);
+  }
+
+  addHandlerSort(handler) {
+    document
+      .querySelector('.input-sort__box')
+      .addEventListener('click', handler);
+  }
+
+  addHandlerSortCascade(handler) {
+    sortCascadeItem.forEach((e) => e.addEventListener('click', handler));
   }
 
   clear() {
@@ -352,10 +456,49 @@ const init = function () {
   toTop();
 };
 
+const sortInp = function () {
+  currView.addHandlerSort(constrolSort);
+};
+
+const sortCascadeInp = function () {
+  currView.addHandlerSortCascade(constrolSortCascade);
+};
+
 const searchInp = function () {
   currView.addHandlerSearch(controlSearch);
 };
 
-searchInp();
+const liveInp = function () {
+  currView.addHandlerLive(controlLive);
+};
+
+const stackedInp = function () {
+  currView.addHandlerStacked(controlStacked);
+};
 
 init();
+searchInp();
+liveInp();
+stackedInp();
+sortInp();
+sortCascadeInp();
+
+// sortBtn.addEventListener('click', function (e) {
+//   sortCascade.classList.toggle('novisible');
+//   if (sortCascade.classList.contains('novisible')) {
+//     sortBtn.style.borderRadius = '16px';
+//   } else {
+//     sortBtn.style.borderRadius = '16px 16px 0 0';
+//   }
+// });
+
+// sortCascadeItem.forEach((e) =>
+//   e.addEventListener('click', function () {
+//     sortCascade.classList.add('novisible');
+//     let label = sortLabel.textContent;
+//     sortBtn.style.borderRadius = '16px';
+//     sortLabel.textContent = e.textContent;
+//     e.textContent = label;
+//     controlCurr();
+//   })
+// );
