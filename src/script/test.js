@@ -38,3 +38,12 @@ const tokens = {
 
 tokens.filter();
 console.log(tokens.curr);
+
+// create an array from 1 ultil 100
+const arr = Array.from({ length: 100 }, (v, k) => k + 1);
+console.log(arr);
+
+// insert a new element in the array after each 10 position
+const arr2 = arr.map((el, i) => (i % 50 === 0 ? [el, 'new'] : el));
+
+console.log(arr2);
