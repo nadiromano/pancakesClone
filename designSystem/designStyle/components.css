@@ -1385,8 +1385,8 @@
   padding: 1px 1px 3px;
 
   /* Modifica Design System da togliere */
-  width: 566px;
-  height: 382px;
+  /* width: 566px;
+  height: 382px; */
 }
 
 .components-liquidity-chart-sty {
@@ -2425,7 +2425,7 @@ a {
 
 .ntf__card-or-card {
   width: 95%;
-  align-items: ;
+  /* align-items: ; */
 }
 
 .ntf__card-or__hero {

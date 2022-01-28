@@ -18,7 +18,5 @@ function switchEl() {
     }
 }
 
-
-
 buttonElFarm.addEventListener("click", switchEl)
 setInterval(switchEl, 9000);
