@@ -24,6 +24,8 @@ header {
   background: var(--bg-color--grad-block);
   padding: 30px;
   margin-top: 60px;
+  width: 100vw;
+  height: 25vh;
 }
 .vote-title {
   font-size: 64px;
