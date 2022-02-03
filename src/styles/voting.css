@@ -1,0 +1,131 @@
+:root {
+  --secundary-color: rgb(31, 199, 212);
+  --hover-color: rgba(49, 208, 170, 0.65);
+  --active-color: rgb(49, 208, 170);
+  --link-color: rgb(31, 199, 212);
+  --light-pink-color: rgb(238, 234, 244);
+  --white-color: rgb(255, 255, 255);
+}
+
+header {
+  width: 100vw;
+  height: 25vh;
+  background: var(--bg-color--grad-block);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.footer-banner-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg-color--grad-block);
+  padding: 30px;
+  margin-top: 60px;
+}
+.vote-title {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.1;
+  padding: 10px;
+  color: var(--primary-color);
+}
+
+.vote-subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--h2-color);
+}
+
+.ban-foot-title{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--h2-color);
+}
+
+.ban-foot-subtitle{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--h2-color);
+}
+.buttonLarge {
+  border-radius: 16px;
+  border: 0px;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  width: 200px;
+  background-color: var(--secundary-color);
+  color: white;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  margin-top: 20px;
+}
+
+.buttonSquashed {
+  border-radius: var(--border-rad);
+  border: 0px;
+  font-size: var(--font-size);
+  font-weight: var(--font-weigth);
+  height: 48px;
+  background-color: var(--secundary-color);
+  color: white;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  width: 137px;
+  height: 32px;
+  opacity: 1;
+}
+
+.buttonHover:hover {
+  opacity: 0.65;
+}
+.buttonActive:active {
+  background-color: var(--active-color);
+  transform: translateY(1px);
+  box-shadow: none;
+}
+span {
+  color: var(--h2-color);
+}
+a {
+  color: var(--link-color);
+}
+
+.container-link{
+ /* da finire */
+}
+
+.vote-prop-sub {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 32px;
+  color: var(--h2-color);
+}
+
+.component-prop {
+  background-color: var(--light-pink-color);
+  border-radius: 24px;
+  width: 100vw;
+  height: 50px;
+}
+.core-btn {
+  background-color: var(--subtle-color);
+  color: var(--white-color);
+  font-weight: 600;
+  line-height: 1.1;
+  cursor: pointer;
+}
+.footer__nav-item:hover {
+  text-decoration: underline;
+}
