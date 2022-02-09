@@ -1,0 +1,401 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page link top token</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="info.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+  <main class="container-pagina-ifo">
+    <div class="container-principale">
+      <div class="info-tab-overview">
+        <div class="tab-version-box info-tab-version-box">
+          <a href="info.html"><button class="tab-button-v2-active">Overview</button></a>
+          <a href="info-pool.html"> <button class="tab-button-v1">Pools</button></a>
+          <a href="info-tokens.html"> <button class="tab-button-v1">Tokens</button></a>
+        </div>
+        <div class="info-input-search">
+          <input placeholder="Search pools or tokens" scale="md" class="input-search__input " value="">
+        </div>
+      </div>
+      <div class="info-container-grafici">
+        <div class="info-leggenda-pagine">
+          <ul class="info-container-leggenda">
+            <li>
+              <a href="info.html" class="info-link-page">
+              <h6 class="info-link1">Info</h6>
+            </a>
+          </li>
+          <li>
+            <div aria-hidden="true" class="info-container-freccia">
+             <img src="Assets1/img page info/freccia-dx-link.svg">
+            </div>
+          </li>
+          <li>
+            <a href="info-tokens.html" class="info-link-page">
+              <h6 class="info-link1">Tokens</h6>
+          </a>
+        </li>
+        <li>
+          <div aria-hidden="true" class="info-container-freccia">
+            <img src="Assets1/img page info/freccia-sx-link.svg">
+          </div>
+        </li>
+        <li>
+          <div class="info-container-name-token">
+            <h6 class="info-name-token">WBNB</h6>
+            <h6 class="info-name-token1">(0xbb...095c)</h6>
+          </div>
+        </li>
+      </ul>
+      <div class="info-container-collegam-page-esterna">
+        <a target="_blank" href="https://bscscan.com/address/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c" class="info-colleg-pag-esterna">
+          View on BscScan
+         <img src="Assets1/img page info/collegamento-token.svg" class="info-img-colleg-token">
+        </a>
+        <div class="info-container-stella">
+         <img src="Assets1/img page info/icona-stella.svg"class="info-img-stella">
+        </div>
+      </div>
+        </div>
+        <h2 class="info-title-section-grafici">PancakeSwap Info & Analytics</h2>
+        <div class="info-box-grafici">
+          <div class="info-box-grafico1">
+            <div class="info-sub-box-grafico1">
+              <h5 class="info-title-grafico">Liquidity</h5>
+              <h1 class="info-number-grafico"> $ 4.20B</h1>
+              <h5 class="info-subtitle-grafico">Jan 26, 2022</h5>
+              <div class="info-box-grafico-img">
+                <canvas id="myChart1"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="info-box-grafico1">
+            <div class="info-sub-box-grafico1">
+              <h5 class="info-title-grafico">Volume 24H</h5>
+              <h1 class="info-number-grafico"> $ 533.65M</h1>
+              <h5 class="info-subtitle-grafico">Jan 26, 2022</h5>
+              <div class="info-box-grafico-img">
+                <canvas id="myChart2"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      <h2 class="info-title-tokens-list">Top Tokens</h2>
+      <div class="components-space">
+        <div class="info-components-tokens-container">
+          <div class="components-tokens-header-lay">
+            <div class="components-tokens-hashtag">#</div>
+
+            <div class="components-tokens-header-text">NAME </div>
+            <div class="components-tokens-header-text">PRICE</div>
+            <div class="components-tokens-header-text">PRICE CHANGE</div>
+            <div class="components-tokens-header-text">VOLUME 24H↓</div>
+            <div class="components-tokens-header-text">LIQUIDITY</div>
+          </div>
+          <div class="components-tokens-border"></div>
+          <a class="components-tokens-a" href="#">
+            <div class="components-tokens-a-content">
+              <div class="components-tokens-number-lay">
+                <div class="components-tokens-number-sty">1</div>
+              </div>
+              <div class="components-tokens-first-text-lay">
+                <img class="components-tokens-img" alt="token logo"
+                  src="https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c/logo.png">
+                <div class="components-tokens-first-text-lay2">
+                  <div class="components-tokens-text-out-sty">
+                    Wrapped BNB
+                  </div>
+                  <div class="components-tokens-text-in-sty">(WBNB)</div>
+                </div>
+              </div>
+              <div class="components-tokens-text-out-sty">$572.62</div>
+              <div class="components-tokens-text-out-sty">
+                <div class="components-tokens-text-failure">↓4.17%</div>
+              </div>
+              <div class="components-tokens-text-out-sty">$1.04B</div>
+              <div class="components-tokens-text-out-sty">$4.26B</div>
+            </div>
+          </a>
+          <div class="components-tokens-border"></div>
+          <div class="componnents-tokens-foot-lay">
+            <div class="components-tokens-l-arrow">
+              <img src="Assets1/freccia-sx.svg">
+            </div>
+            <div class="components-tokens-text-out-sty">Page 1 of 3</div>
+            <div class="components-tokens-arrows-sty">
+              <img src="Assets1/freccia-dx.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="info-title-tokens-list">Top Pools</h2>
+      <div class="components-space">
+        <div class="info-components-tokens-container">
+          <div class="info-components-tokens-header-lay">
+            <div class="components-tokens-hashtag">#</div>
+
+            <div class="components-tokens-header-text">POOL</div>
+            <div class="components-tokens-header-text">VOLUME 24H↓</div>
+            <div class="components-tokens-header-text">VOLUME 7D</div>
+            <div class="components-tokens-header-text">LP REWARD FEES 24H</div>
+            <div class="components-tokens-header-text">LP REWARD APR</div>
+            <div class="components-tokens-header-text">LIQUIDITY</div>
+          </div>
+          <div class="components-tokens-border"></div>
+          <a class="components-tokens-a" href="#">
+            <div class="info-components-tokens-a-content">
+              <div class="components-tokens-number-lay">
+                <div class="components-tokens-number-sty">1</div>
+              </div>
+              <div class="components-tokens-first-text-lay">
+                <img src="Assets1/questionMark.svg">
+                <img class="components-tokens-img" alt="token logo"
+                  src="https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c/logo.png">
+                <div class="components-tokens-first-text-lay2">
+                  <div class="components-tokens-text-out-sty">
+                    MGOLD/BUSD
+                  </div>
+                  <div class="components-tokens-text-in-sty"></div>
+                </div>
+              </div>
+              <div class="components-tokens-text-out-sty">$572.62M</div>
+              <div class="components-tokens-text-out-sty">
+                <div class="info-components-tokens-text-failure ">$4.17M</div>
+              </div>
+              <div class="components-tokens-text-out-sty">$1.04K</div>
+              <div class="components-tokens-text-out-sty">4.26B%</div>
+              <div class="components-tokens-text-out-sty">$7.26BK</div>
+            </div>
+          </a>
+          <div class="components-tokens-border"></div>
+          <div class="componnents-tokens-foot-lay">
+            <div class="components-tokens-l-arrow">
+              <img src="Assets1/freccia-sx.svg">
+            </div>
+            <div class="components-tokens-text-out-sty">Page 1 of 6</div>
+            <div class="components-tokens-arrows-sty">
+              <img src="Assets1/freccia-dx.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <h2 class="info-title-tokens-list">Transaction</h2>
+      <div class="info-input-selector__check__container">
+        <div>
+          <input type="radio" id="vote" name="proposals" value="vote" class="input-selector__radio" checked="">
+
+          <label class="input-selector__label" for="vote">All</label>
+        </div>
+        <div>
+          <input type="radio" id="soon" name="proposals" value="soon" class="input-selector__radio">
+
+          <label class="input-selector__label" for="soon">Swaps</label>
+        </div>
+        <div>
+          <input type="radio" id="closed" name="proposals" value="closed" class="input-selector__radio">
+
+          <label class="input-selector__label" for="closed">Adds</label>
+        </div>
+        <div>
+          <input type="radio" id="soon" name="proposals" value="soon" class="input-selector__radio">
+
+          <label class="input-selector__label" for="soon">Removes</label>
+        </div>
+      </div>
+      <div class="components-space">
+        <div class="info-components-tokens-container">
+          <div class="info-components-tokens-header-lay">
+            <div class="components-tokens-hashtag"></div>
+
+            <div class="components-tokens-header-text">ACTION</div>
+            <div class="components-tokens-header-text">TOTAL VALUE</div>
+            <div class="components-tokens-header-text">TOKEN AMOUNT</div>
+            <div class="components-tokens-header-text">TOKEN AMOUNT</div>
+            <div class="components-tokens-header-text">ACCOUNT</div>
+            <div class="components-tokens-header-text">TIME↓</div>
+          </div>
+          <div class="components-tokens-border"></div>
+          <a class="components-tokens-a" href="#">
+            <div class="info-components-tokens-a-content">
+              <div class="components-tokens-number-lay">
+                <div class="components-tokens-number-sty"></div>
+              </div>
+              <div class="components-tokens-first-text-lay">
+                <div class="components-tokens-first-text-lay2">
+                  <div class="components-tokens-text-out-sty">
+                    Add UST and BUSD
+                  </div>
+                  <div class="components-tokens-text-in-sty"></div>
+                </div>
+                <img src="Assets1/img page info/collegamento-token.svg">
+                
+              </div>
+              <div class="components-tokens-text-out-sty">$255.93</div>
+              <div class="components-tokens-text-out-sty">
+                <div class="info-components-tokens-text-failure ">127.58 UST</div>
+              </div>
+              <div class="components-tokens-text-out-sty">128.06 BUSD</div>
+              <div class="info1-components-tokens-text-out-sty ">0xb1...1950
+                <img src="Assets1/img page info/collegamento-token.svg">
+              </div>
+              <div class="components-tokens-text-out-sty">1 day</div>
+            </div>
+          </a>
+          <div class="components-tokens-border"></div>
+          <div class="componnents-tokens-foot-lay">
+            <div class="components-tokens-l-arrow">
+              <img src="Assets1/freccia-sx.svg">
+            </div>
+            <div class="components-tokens-text-out-sty">Page 1 of 10</div>
+            <div class="components-tokens-arrows-sty">
+              <img src="Assets1/freccia-dx.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+   <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__box">
+        <ul>
+          <li class="footer__nav-title">about</li>
+          <li>
+            <a href="#" class="footer__nav-item">Contact</a>
+          </li>
+          <li>
+            <a href="#" class="footer__nav-item">Brand</a>
+          </li>
+          <li>
+            <a href="#" class="footer__nav-item">Blog</a>
+          </li>
+          <li>
+            <a href="#" class="footer__nav-item">Community</a>
+          </li>
+          <li>
+            <a href="#" class="footer__nav-item">CAKE Token</a>
+          </li>
+          <li>-</li>
+          <li>
+            <a href="#" class="footer__nav-item footer__nav-item--accent">Online Store</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__box">
+        <ul>
+          <li class="footer__nav-title">help</li>
+          <li>
+            <a href="#" class="footer__nav-item">Customer Support</a>
+          </li>
+          <li>
+            <a href="#" class="footer__nav-item">Guides</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__box">
+        <ul>
+          <li class="footer__nav-title">DEVELOPERS</li>
+          <li>
+            <a href="#" class="footer__nav-item">GitHub</a>
+          </li>
+          <li>
+            <a href="#" class="footer__nav-item">Documentation</a>
+          </li>
+          <li>
+            <a href="#" class="footer__nav-item">Bug Bounty</a>
+          </li>
+          <li>
+            <a href="#" class="footer__nav-item">Audits</a>
+          </li>
+          <li>
+            <a href="#" class="footer__nav-item">Careers</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="logo-bcg-dark footer__logo">
+        <a href="#" class="logo-container">
+          <img src="Assets1/logoFooter.svg" class="footer__logo-img" />
+        </a>
+      </div>
+    </div>
+    <div class="footer__social">
+      <div class="twitter">
+        <img src="Assets1/twitter.svg" />
+      </div>
+      <div class="telegram">
+        <img src="Assets1/telegram.svg" />
+      </div>
+      <div class="reddit">
+        <img src="Assets1/reddit.svg" />
+      </div>
+      <div class="instagram">
+        <img src="Assets1/instagram.svg" />
+      </div>
+      <div class="github">
+        <img src="Assets1/github.svg" />
+      </div>
+      <div class="discord">
+        <img src="Assets1/discord.svg" />
+      </div>
+    </div>
+    <div class="footer__option-container">
+      <div class="footer__option-sx">
+        <div class="input-switch__container">
+          <div class="input-switch__box">
+            <input scale="md" type="checkbox" class="input-switch__checkbox" />
+            <div class="input-switch__states">
+              <div class="input-switch__item--off">
+                <img src="Assets1/sun-gray.svg" alt="" />
+              </div>
+              <div class="input-switch__item--on">
+                <img src="Assets1/moon.svg" class="moonIcon" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="input-switch__selected">
+            <div class="input-switch__item--selected">
+              <img class="svgSun" src="Assets1/sun.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="footer__option-lang">
+          <div class="language footer__option-lang-img">
+            <img src="Assets1/language.svg" />
+          </div>
+          <div class="footer__option-lang__text">ENG</div>
+        </div>
+      </div>
+
+      <div class="footer__option-dx">
+        <div class="pancakes">
+          <img src="Assets1/pancakes.svg" />
+        </div>
+        <div class="footer__option-value">$10.582</div>
+        <div class="footerBtn">
+          <a href="#">
+            Buy CAKE
+            <img src="Assets1/arrow.svg" alt="" class="arrow" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</main>
+  <!-- end Footer-->
+
+</body>
+
+</html>
